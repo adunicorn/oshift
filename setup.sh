@@ -23,3 +23,10 @@ restorecon /etc/named.conf
 
 systemctl stop NetworkManager
 cp resolv.conf /etc/resolv.conf
+
+
+if [ ! -e "/root/.ssh/id_rsa" ]; then
+    ssh-keygen -N "" -f /root/.ssh/id_rsa
+fi
+
+
