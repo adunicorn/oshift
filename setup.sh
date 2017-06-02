@@ -34,12 +34,16 @@ if [ ! -e "/root/.ssh/id_rsa" ]; then
     ssh-keygen -N "" -f /root/.ssh/id_rsa
 fi
 
-ssh-copy-id root@minion1.adunicorn.local
-ssh-copy-id root@minion2.adunicorn.local
+
 ssh-copy-id root@master.adunicorn.local
 
-
-
 hostname master.adunicorn.local
-ssh root@minion1 'hostname minion1.adunicorn.local'
-ssh root@minion2 'hostname minion2.adunicorn.local'
+
+
+for SERVER in minion1 minion2
+do
+    ssh-copy-id root@${SERVER}.adunicorn.local
+    ssh root@${SERVER} "hostname ${SERVER}.adunicorn.local"
+    ssh root@${SERVER} "systemctl stop NetworkManager"
+    scp /etc/resolv.conf root@${SERVER}:/etc/resolv.conf
+done
