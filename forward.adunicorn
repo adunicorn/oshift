@@ -1,0 +1,18 @@
+$TTL 86400
+@   IN  SOA     master.adunicorn.local. root.adunicorn.local. (
+        2011071001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          master.adunicorn.local.
+@       IN  A           192.168.1.64
+@       IN  A           192.168.1.48
+@       IN  A           192.168.1.81
+@       IN  A           192.168.1.80
+
+ui               IN  A   192.168.1.80
+master           IN  A   192.168.1.64
+minion1          IN  A   192.168.1.48
+minion2          IN  A   192.168.1.81
