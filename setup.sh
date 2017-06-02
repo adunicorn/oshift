@@ -39,3 +39,7 @@ ssh-copy-id root@minion2.adunicorn.local
 ssh-copy-id root@master.adunicorn.local
 
 
+
+hostname master.adunicorn.local
+ssh root@minion1 'hostname minion1.adunicorn.local'
+ssh root@minion2 'hostname minion2.adunicorn.local'
