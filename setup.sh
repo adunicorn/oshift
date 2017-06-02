@@ -1,7 +1,13 @@
+set -e 
+
 MASTER=192.168.1.64
 MINION1=192.168.1.48
 MINION2=192.168.1.81
 UI=192.168.1.84
+
+yum install -y \
+        epel-release
+
 
 yum install -y \
         git \
@@ -47,3 +53,5 @@ do
     ssh root@${SERVER} "systemctl stop NetworkManager"
     scp /etc/resolv.conf root@${SERVER}:/etc/resolv.conf
 done
+
+echo "Done. You can run ./setup-cluster.sh now and have a beer"
