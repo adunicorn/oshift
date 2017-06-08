@@ -15,6 +15,7 @@ containerized=true
 openshift_clock_enabled=true
 openshift_deployment_type=origin
 openshift_release=1.5.1
+openshift_disable_check=memory_availability
 
 # uncomment the following to enable htpasswd authentication; defaults to DenyAllPasswordIdentityProvider
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
