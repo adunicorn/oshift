@@ -9,7 +9,7 @@ nodes
 ansible_ssh_user=root
 
 # If ansible_ssh_user is not root, ansible_become must be set to true
-#ansible_become=true
+ansible_become=true
 
 containerized=true
 openshift_clock_enabled=true
