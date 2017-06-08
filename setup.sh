@@ -1,9 +1,9 @@
 set -e 
 
-MASTER=192.168.1.64
-MINION1=192.168.1.48
-MINION2=192.168.1.81
-UI=192.168.1.84
+MASTER=192.168.1.81
+MINION1=192.168.1.82
+MINION2=192.168.1.83
+UI=192.168.1.80
 
 yum install -y \
         epel-release
@@ -33,7 +33,8 @@ restorecon -rv /var/named
 restorecon /etc/named.conf
 
 systemctl stop NetworkManager
-cp resolv.conf /etc/resolv.conf
+    echo "Skippping resolv.conf: DNS is statically and manually configured on master"
+#cp resolv.conf /etc/resolv.conf
 
 
 if [ ! -e "/root/.ssh/id_rsa" ]; then
@@ -51,7 +52,9 @@ do
     ssh-copy-id root@${SERVER}.adunicorn.local
     ssh root@${SERVER} "hostname ${SERVER}.adunicorn.local"
     ssh root@${SERVER} "systemctl stop NetworkManager"
-    scp /etc/resolv.conf root@${SERVER}:/etc/resolv.conf
+
+    echo "Skippping resolv.conf: DNS is statically and manually configured on each minion"
+#    scp /etc/resolv.conf root@${SERVER}:/etc/resolv.conf
 done
 
 echo "Done. You can run ./setup-cluster.sh now and have a beer"

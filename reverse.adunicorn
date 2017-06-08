@@ -9,10 +9,10 @@ $TTL 86400
 @       IN  NS          master.adunicorn.local.
 @       IN  PTR         adunicorn.local.
 ui               IN  A   192.168.1.80
-master           IN  A   192.168.1.64
-minion1          IN  A   192.168.1.48
-minion2          IN  A   192.168.1.81
+master           IN  A   192.168.1.81
+minion1          IN  A   192.168.1.82
+minion2          IN  A   192.168.1.83
 80     IN  PTR         ui.adunicorn.local.
-64     IN  PTR         master.adunicorn.local.
-48     IN  PTR         minion1.adunicorn.local.
-81     IN  PTR         minion2.adunicorn.local.
+81     IN  PTR         master.adunicorn.local.
+82     IN  PTR         minion1.adunicorn.local.
+83     IN  PTR         minion2.adunicorn.local.
