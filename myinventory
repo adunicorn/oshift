@@ -14,8 +14,11 @@ ansible_sudo=root
 containerized=true
 openshift_clock_enabled=true
 openshift_deployment_type=origin
-openshift_release=1.4
+openshift_release=1.5.1
 openshift_disable_check=memory_availability
+
+openshift_docker_insecure_registries=172.30.0.0/16
+
 
 # uncomment the following to enable htpasswd authentication; defaults to DenyAllPasswordIdentityProvider
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
