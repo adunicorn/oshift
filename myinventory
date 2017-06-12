@@ -23,7 +23,8 @@ openshift_master_htpasswd_users={'admin': '$apr1$zgSjCrLt$1KSuj66CggeWSv.D.BXOA1
 
 # host group for masters
 [masters]
-master.adunicorn.local
+#master.adunicorn.local
+minion1.adunicorn.local
 
 # host group for etcd
 [etcd]
@@ -31,7 +32,7 @@ master.adunicorn.local
 
 # host group for nodes, includes region info
 [nodes]
-master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
-minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}"
+#master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
+minion1.adunicorn.local openshift_node_labels="{'region': 'infra', 'zone': 'east'}"
 minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'west'}"
 
