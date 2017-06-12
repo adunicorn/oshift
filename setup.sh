@@ -23,6 +23,7 @@ cp reverse.adunicorn /etc/named
 systemctl enable named
 systemctl start named
 
+systemctl unmask firewalld
 firewall-cmd --permanent --add-port=53/tcp
 firewall-cmd --permanent --add-port=53/udp
 firewall-cmd --reload

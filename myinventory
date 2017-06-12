@@ -7,15 +7,14 @@ nodes
 [OSEv3:vars]
 # SSH user, this user should allow ssh based auth without requiring a password
 ansible_ssh_user=root
-
-# If ansible_ssh_user is not root, ansible_become must be set to true
 ansible_become=true
 ansible_become_user=root
+ansible_sudo=root
 
 containerized=true
 openshift_clock_enabled=true
 openshift_deployment_type=origin
-openshift_release=1.5.1
+openshift_release=1.4
 openshift_disable_check=memory_availability
 
 # uncomment the following to enable htpasswd authentication; defaults to DenyAllPasswordIdentityProvider
@@ -33,6 +32,6 @@ master.adunicorn.local
 # host group for nodes, includes region info
 [nodes]
 master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
-minion1.adunicorn.local openshift_node_labels="{'region': 'infra', 'zone': 'east'}"
-minion2.adunicorn.local openshift_node_labels="{'region': 'infra', 'zone': 'west'}"
+minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}"
+minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'west'}"
 
