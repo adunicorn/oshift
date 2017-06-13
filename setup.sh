@@ -101,8 +101,8 @@ do
     echo -e "\n*** Configuring ${node}"
     ssh-copy-id root@${node}
     ssh root@${node} "hostname ${node}"
-    ssh root@${node} "systemctl stop NetworkManager"
-    scp /etc/resolv.conf root@${node}:/etc/resolv.conf
+    ssh root@${node} "systemctl start NetworkManager"
+#    scp /etc/resolv.conf root@${node}:/etc/resolv.conf
 done
 
 echo -e "\n\n**************** Checking that DNS works on all nodes"
@@ -119,6 +119,8 @@ do
 	ssh root@${node} -a "if ping -c 1 ${target} &> /dev/null; then echo -e '${GREEN}${target} can be reached${NC}'; else echo -e '${RED}${target} cannot be reached${NC}'; fi"
 
     done
+    node=www.google.com
+    ssh root@${node} -a "if ping -c 1 ${target} &> /dev/null; then echo -e '${GREEN}${target} can be reached${NC}'; else echo -e '${RED}${target} cannot be reached${NC}'; fi"
 done
 
 echo -e "${GREEN}Done. You can run ./setup-cluster.sh now and have a beer.${NC}"
