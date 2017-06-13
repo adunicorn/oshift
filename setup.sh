@@ -83,6 +83,7 @@ restorecon /etc/named.conf
 systemctl stop NetworkManager
 cp resolv.conf /etc/resolv.conf
 
+hostname controller.adunicorn.local
 
 echo -e "\n\n**************** Checking DNS works on Controller"
 
