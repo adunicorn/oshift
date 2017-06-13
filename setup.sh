@@ -120,7 +120,7 @@ do
 	ssh root@${node} -a "if ping -c 1 ${target} &> /dev/null; then echo -e '${GREEN}${target} can be reached${NC}'; else echo -e '${RED}${target} cannot be reached${NC}'; fi"
 
     done
-    node=www.google.com
+    target=www.google.com
     ssh root@${node} -a "if ping -c 1 ${target} &> /dev/null; then echo -e '${GREEN}${target} can be reached${NC}'; else echo -e '${RED}${target} cannot be reached${NC}'; fi"
 done
 
