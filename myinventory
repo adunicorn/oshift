@@ -5,11 +5,12 @@ nodes
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
+
 # SSH user, this user should allow ssh based auth without requiring a password
 ansible_ssh_user=root
-ansible_become=true
-ansible_become_user=root
-ansible_sudo=root
+#ansible_become=true
+#ansible_become_user=root
+#ansible_sudo=root
 
 containerized=true
 openshift_clock_enabled=true
@@ -26,8 +27,8 @@ openshift_master_htpasswd_users={'admin': '$apr1$zgSjCrLt$1KSuj66CggeWSv.D.BXOA1
 
 # host group for masters
 [masters]
-#master.adunicorn.local
-minion1.adunicorn.local
+master.adunicorn.local
+
 
 # host group for etcd
 [etcd]
@@ -35,7 +36,7 @@ master.adunicorn.local
 
 # host group for nodes, includes region info
 [nodes]
-#master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
-minion1.adunicorn.local openshift_node_labels="{'region': 'infra', 'zone': 'east'}"
+master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
+minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}"
 minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'west'}"
 

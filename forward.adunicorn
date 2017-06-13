@@ -7,12 +7,14 @@ $TTL 86400
         86400       ;Minimum TTL
 )
 @       IN  NS          master.adunicorn.local.
+@       IN  A           192.168.1.60
 @       IN  A           192.168.1.80
 @       IN  A           192.168.1.81
 @       IN  A           192.168.1.82
 @       IN  A           192.168.1.83
 
-ui               IN  A   192.168.1.80
+controller       IN  A   192.168.1.60
+mac              IN  A   192.168.1.80
 master           IN  A   192.168.1.81
 minion1          IN  A   192.168.1.82
 minion2          IN  A   192.168.1.83
