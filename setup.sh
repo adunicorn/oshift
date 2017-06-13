@@ -42,8 +42,9 @@ function check_ping_all {
 
 echo -e "\n\n**************** Checking that all servers respond"
 
+systemctl restart named network NetworkManager
 check_ping_all "${ALL_NODES}"
-
+check_ping www.google.com
 
 echo -e "\n\n**************** Installing software"
 
@@ -59,13 +60,12 @@ yum install -y \
 
 echo -e "\n\n**************** Configuring DNS"
 
-cp named.conf /etc/named.conf
+#cp named.conf /etc/named.conf
 cp forward.adunicorn /etc/named
 cp reverse.adunicorn /etc/named
 
 systemctl enable named
-systemctl start named
-
+check_ping www.google.com
 
 echo -e "\n\n**************** Configuring firewall"
 
@@ -80,15 +80,17 @@ chown -v root:named /etc/named.conf
 restorecon -rv /var/named
 restorecon /etc/named.conf
 
-systemctl stop NetworkManager
-cp resolv.conf /etc/resolv.conf
+
+#systemctl stop NetworkManager
+#cp resolv.conf /etc/resolv.conf
 
 hostname controller.adunicorn.local
+systemctl restart network named NetworkManager
 
 echo -e "\n\n**************** Checking DNS works on Controller"
 
 check_ping_all "${ALL_NODES_HOSTNAMES}"
-
+check_ping www.google.com
 
 echo -e "\n\n**************** Creating root's ssh keys on Controller"
 if [ ! -e "/root/.ssh/id_rsa" ]; then
@@ -102,7 +104,7 @@ do
     echo -e "\n*** Configuring ${node}"
     ssh-copy-id root@${node}
     ssh root@${node} "hostname ${node}"
-    ssh root@${node} "systemctl start NetworkManager"
+    ssh root@${node} "systemctl restart network NetworkManager"
 #    scp /etc/resolv.conf root@${node}:/etc/resolv.conf
 done
 
