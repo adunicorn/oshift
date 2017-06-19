@@ -11,10 +11,10 @@ $TTL 86400
 @       IN  A           192.168.1.80
 @       IN  A           192.168.1.81
 @       IN  A           192.168.1.82
-@       IN  A           192.168.1.83
+@       IN  A           192.168.1.84
 
 controller       IN  A   192.168.1.60
 mac              IN  A   192.168.1.80
 master           IN  A   192.168.1.81
 minion1          IN  A   192.168.1.82
-minion2          IN  A   192.168.1.83
+minion2          IN  A   192.168.1.84

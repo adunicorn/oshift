@@ -12,9 +12,9 @@ controller       IN  A   192.168.1.80
 mac              IN  A   192.168.1.80
 master           IN  A   192.168.1.81
 minion1          IN  A   192.168.1.82
-minion2          IN  A   192.168.1.83
+minion2          IN  A   192.168.1.84
 60     IN  PTR         controller.adunicorn.local.
 80     IN  PTR         mac.adunicorn.local.
 81     IN  PTR         master.adunicorn.local.
 82     IN  PTR         minion1.adunicorn.local.
-83     IN  PTR         minion2.adunicorn.local.
+84     IN  PTR         minion2.adunicorn.local.
