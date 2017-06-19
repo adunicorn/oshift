@@ -16,7 +16,7 @@ containerized=true
 openshift_clock_enabled=true
 openshift_deployment_type=origin
 openshift_release=1.5.1
-openshift_disable_check=memory_availability
+openshift_disable_check=memory_availability, docker_storage
 
 openshift_docker_insecure_registries=172.30.0.0/16
 
@@ -30,6 +30,7 @@ openshift_master_htpasswd_users={'admin': '$apr1$zgSjCrLt$1KSuj66CggeWSv.D.BXOA1
 master.adunicorn.local
 
 
+
 # host group for etcd
 [etcd]
 master.adunicorn.local
@@ -37,5 +38,5 @@ master.adunicorn.local
 # host group for nodes, includes region info
 [nodes]
 master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
-minion2.adunicorn.local openshift_node_labels="{'region': 'primary', 'zone': 'east'}" openshift_schedulable=true
-minion1.adunicorn.local openshift_node_labels="{'region': 'primary', 'zone': 'east'}" openshift_schedulable=true
+minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
+#minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true

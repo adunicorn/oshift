@@ -1,4 +1,7 @@
+set -e 
+
 WORKDIR=`mktemp -d`
+#WORKDIR=/root/openshift-ansible
 git clone git@github.com:openshift/openshift-ansible.git ${WORKDIR}
 
 ansible-playbook \
