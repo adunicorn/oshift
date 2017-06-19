@@ -105,13 +105,13 @@ do
     ssh-copy-id root@${node}
     ssh root@${node} "hostname ${node}"
     ssh root@${node} "systemctl restart network NetworkManager"
-#    scp /etc/resolv.conf root@${node}:/etc/resolv.conf
-#    yum remove -y docker docker-common container-selinux docker-selinux docker-engine
-#    yum install -y yum-utils device-mapper-persistent-data lvm2 
-#    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-#    yum makecache fast
-#    yum install -y docker-ce
+
     
+    ssh root@${node} "yum install -y docker"
+    ssh root@${node} "sed -i '/OPTIONS=.*/c\OPTIONS=\"--selinux-enabled --insecure-registry 172.30.0.0/16\"' /etc/sysconfig/docker"
+    
+
+    ssh root@${node} "yum install -y openvswitch && systemctl enable openvswitch && systemctl restart openvswitch"
 done
 
 echo -e "\n\n**************** Checking that DNS works on all nodes"

@@ -39,4 +39,4 @@ master.adunicorn.local
 [nodes]
 master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
 minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
-#minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
+minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
