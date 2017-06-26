@@ -37,6 +37,6 @@ master.adunicorn.local
 
 # host group for nodes, includes region info
 [nodes]
-master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=false
+master.adunicorn.local  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=true
 minion1.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
 minion2.adunicorn.local openshift_node_labels="{'region': 'worker', 'zone': 'east'}" openshift_schedulable=true
