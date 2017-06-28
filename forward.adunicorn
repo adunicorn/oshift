@@ -18,3 +18,4 @@ mac              IN  A   192.168.1.80
 master           IN  A   192.168.1.81
 minion1          IN  A   192.168.1.82
 minion2          IN  A   192.168.1.84
+*.apps           IN  CNAME master
