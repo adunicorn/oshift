@@ -4,7 +4,7 @@ OPENSHIFT_CONSOLE=https://192.168.64.2:8443
 oc login ${OPENSHIFT_CONSOLE} -u admin -p admin
 
 
-oc new-project issuing
+oc new-project issuing2
 
 #oc create -f openshift-templates/redis-ephemeral-template.json
 
