@@ -3,8 +3,9 @@ set -e
 OPENSHIFT_CONSOLE=https://192.168.64.2:8443
 oc login ${OPENSHIFT_CONSOLE} -u admin -p admin
 
-echo "\n\n\n** Creating the project.."
-###################################################oc new-project issuing
+PROJECT_NAME=issuing
+echo "\n\n\n** Creating the project ${PROJECT_NAME}.."
+oc new-project ${PROJECT_NAME}
 oc project issuing
 
 echo "\n\n\n** Pushing images in the registry.."
