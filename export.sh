@@ -11,3 +11,5 @@ oc export route issuing.192.168.64.2.nip.io -o yaml > openshift-resources/route-
 
 oc export imagestream rabbitmq -o yaml > openshift-resources/imagestream-rabbitmq.yml
 oc export imagestream issuing -o yaml > openshift-resources/imagestream-issuing.yml
+
+oc export secret redis -o yaml > openshift-resources/secret-redis.yml
