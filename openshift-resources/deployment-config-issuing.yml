@@ -57,7 +57,7 @@ spec:
       from:
         kind: ImageStreamTag
         name: issuing:latest
-        namespace: issuing2
+        namespace: issuing
     type: ImageChange
 status:
   availableReplicas: 0

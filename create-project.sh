@@ -4,9 +4,12 @@ OPENSHIFT_CONSOLE=https://192.168.64.2:8443
 oc login ${OPENSHIFT_CONSOLE} -u admin -p admin
 
 
-oc new-project issuing2
+oc new-project issuing
 
 #oc create -f openshift-templates/redis-ephemeral-template.json
+
+oc create -f openshift-resources/imagestream-rabbitmq.yml
+oc create -f openshift-resources/imagestream-issuing.yml
 
 oc create -f openshift-resources/deployment-config-issuing.yml
 oc create -f openshift-resources/deployment-config-rabbitmq.yml
