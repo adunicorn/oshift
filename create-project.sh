@@ -1,7 +1,10 @@
 set -e
 
+eval $(minishift docker-env)
 OPENSHIFT_CONSOLE=https://192.168.64.2:8443
 oc login ${OPENSHIFT_CONSOLE} -u admin -p admin
+docker login -u admin -p $(oc whoami -t) $(minishift openshift registry)
+
 
 PROJECT_NAME=issuing
 echo "\n\n\n** Creating the project ${PROJECT_NAME}.."
