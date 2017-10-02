@@ -9,7 +9,7 @@ metadata:
     app: issuing
   name: issuing
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     app: issuing
     deploymentconfig: issuing
