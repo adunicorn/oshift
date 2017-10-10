@@ -9,7 +9,7 @@ metadata:
     app: issuing
   name: issuing
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     app: issuing
     deploymentconfig: issuing
@@ -33,7 +33,7 @@ spec:
         deploymentconfig: issuing
     spec:
       containers:
-      - image: adunicorn/issuing:3
+      - image: adunicorn/issuing:latest
         imagePullPolicy: Always
         name: issuing
         ports:
