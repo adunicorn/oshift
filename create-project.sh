@@ -37,15 +37,15 @@ oc create -f openshift-resources/issuing-service.yml
 oc create -f openshift-resources/issuing-route.yml
 
 ## RabbitMQ
-#oc create -f openshift-resources/rabbitmq-imagestream.yml
-#oc create -f openshift-resources/rabbitmq-deployment-config.yml
-#oc create -f openshift-resources/rabbitmq-service.yml
-#oc create -f openshift-resources/rabbitmq-route.yml
+oc create -f openshift-resources/rabbitmq-imagestream.yml
+oc create -f openshift-resources/rabbitmq-deployment-config.yml
+oc create -f openshift-resources/rabbitmq-service.yml
+oc create -f openshift-resources/rabbitmq-route.yml
 
 ## Redis
-#oc create -f openshift-resources/redis-deployment-config.yml
-#oc create -f openshift-resources/redis-service.yml
-#oc create -f openshift-resources/redis-secret.yml
+oc create -f openshift-resources/redis-deployment-config.yml
+oc create -f openshift-resources/redis-service.yml
+oc create -f openshift-resources/redis-secret.yml
 
 
 echo "\n\n\n** Deploying..."
