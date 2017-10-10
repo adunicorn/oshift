@@ -189,8 +189,8 @@
 </node>
 <node CREATED="1507212487984" ID="ID_1683741143" MODIFIED="1507212512169" TEXT="Final comment"/>
 </node>
-<node CREATED="1507212073920" FOLDED="true" ID="ID_1345274277" MODIFIED="1507279855653" POSITION="right" TEXT="Conclusion">
-<node CREATED="1507212075316" FOLDED="true" ID="ID_954880536" MODIFIED="1507279768648">
+<node CREATED="1507212073920" ID="ID_1345274277" MODIFIED="1507280840618" POSITION="right" TEXT="Conclusion">
+<node CREATED="1507212075316" ID="ID_954880536" MODIFIED="1507280847633">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -203,9 +203,10 @@
 </html></richcontent>
 <node CREATED="1507212093556" ID="ID_800298232" MODIFIED="1507212095030" TEXT="Explain that most everything showed would possible without containers (it would have been possible to decouple subsystems with an asynchronous queue, and to use more balanced service instances): containers just make it extremely easy, fast and cheap."/>
 <node CREATED="1507279746992" ID="ID_1482457610" MODIFIED="1507279767550" TEXT="Without Docker and container, the same result would be possible at a very high cost"/>
+<node CREATED="1507280849586" ID="ID_1098985434" MODIFIED="1507280854964" TEXT="Disaster Recovery"/>
 </node>
-<node CREATED="1507212101786" FOLDED="true" ID="ID_440372864" MODIFIED="1507279855087" TEXT="Risks, costs and challenges">
-<node CREATED="1507279783995" FOLDED="true" ID="ID_1928457104" MODIFIED="1507279854415" TEXT="The introduction of container technology causes a huge change, comparable of even bigger than the introduction of webMethods.">
+<node CREATED="1507212101786" ID="ID_440372864" MODIFIED="1507582102167" TEXT="Risks, costs and challenges">
+<node CREATED="1507279783995" ID="ID_1928457104" MODIFIED="1507582102171" TEXT="The introduction of container technology causes a huge change, comparable of even bigger than the introduction of webMethods.">
 <node CREATED="1507279828653" ID="ID_803254009" MODIFIED="1507279840916" TEXT="We need very specialized and skilled developers and ops"/>
 <node CREATED="1507279841692" ID="ID_1496089794" MODIFIED="1507279852070" TEXT="We need specialized processes"/>
 </node>
