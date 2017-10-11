@@ -13,6 +13,10 @@ spec:
     port: 5000
     protocol: TCP
     targetPort: 5000
+  - name: 6379-tcp
+    port: 6379
+    protocol: TCP
+    targetPort: 6379
   selector:
     deploymentconfig: issuing
   sessionAffinity: None

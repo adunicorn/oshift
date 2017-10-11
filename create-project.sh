@@ -21,9 +21,6 @@ echo "\n\n\n** Creating OpenShift resources from exports.."
 oc create -f openshift-resources/redis-master-deployment-config.yml
 oc create -f openshift-resources/redis-master-service.yml
 
-oc create -f openshift-resources/redis-slave-deployment-config.yml
-oc create -f openshift-resources/redis-slave-service.yml
-
 ## Issuing
 oc create -f openshift-resources/issuing-deployment-config.yml
 oc create -f openshift-resources/issuing-service.yml
@@ -37,6 +34,5 @@ oc create -f openshift-resources/rabbitmq-route.yml
 
 echo "\n\n\n** Deploying..."
 oc deploy redis-master
-oc deploy redis-slave
 oc deploy issuing
 oc deploy rabbitmq
