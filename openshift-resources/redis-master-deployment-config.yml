@@ -6,12 +6,12 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: redis-cluster
+    app: issuing
   name: redis-master
 spec:
   replicas: 1
   selector:
-    app: redis-cluster
+    app: issuing
     deploymentconfig: redis-master
   strategy:
     activeDeadlineSeconds: 21600
@@ -29,7 +29,7 @@ spec:
         openshift.io/generated-by: OpenShiftWebConsole
       creationTimestamp: null
       labels:
-        app: redis-cluster
+        app: issuing
         deploymentconfig: redis-master
     spec:
       containers:

@@ -6,12 +6,12 @@ metadata:
   creationTimestamp: null
   generation: 1
   labels:
-    app: rabbitmq
+    app: issuing
   name: rabbitmq
 spec:
   replicas: 1
   selector:
-    app: rabbitmq
+    app: issuing
     deploymentconfig: rabbitmq
   strategy:
     activeDeadlineSeconds: 21600
@@ -29,7 +29,7 @@ spec:
         openshift.io/generated-by: OpenShiftWebConsole
       creationTimestamp: null
       labels:
-        app: rabbitmq
+        app: issuing
         deploymentconfig: rabbitmq
     spec:
       containers:
