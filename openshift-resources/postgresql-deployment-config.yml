@@ -26,22 +26,20 @@ spec:
         name: postgresql
     spec:
       containers:
+      - image: adunicorn/loader:latest
+        imagePullPolicy: Always
+        name: loader
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+
       - env:
         - name: POSTGRESQL_USER
-          valueFrom:
-            secretKeyRef:
-              key: database-user
-              name: postgresql
+          value: user
         - name: POSTGRESQL_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              key: database-password
-              name: postgresql
+          value: user
         - name: POSTGRESQL_DATABASE
-          valueFrom:
-            secretKeyRef:
-              key: database-name
-              name: postgresql
+          value: issuing
         image: docker.io/centos/postgresql-95-centos7:95
         imagePullPolicy: IfNotPresent
         livenessProbe:
