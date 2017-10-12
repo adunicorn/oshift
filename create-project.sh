@@ -14,6 +14,8 @@ oc import-image rabbitmq --from=docker.io/luiscoms/openshift-rabbitmq --confirm
 oc import-image postgresql:9.5 --from=docker.io/centos/postgresql-95-centos7 --confirm
 oc import-image loader --from=docker.io/adunicorn/loader --confirm
 
+# Loader
+oc create -f openshift-resources/loader-deployment-config.yml
 
 echo "\n\n\n** Creating OpenShift resources from exports.."
 #oc create -f openshift-templates/redis-ephemeral-template.json

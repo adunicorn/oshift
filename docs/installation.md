@@ -21,13 +21,13 @@ Open a terminal in the `loader` pod
 Then generate the schema with:
 
 ```
-$ python /app/execsql.py localhost /app/sql/create-schema.sql
+$ python /app/execsql.py $POSTGRESQL_SERVICE_HOST /app/sql/create-schema.sql
 ```
 
 To insert a number of sample rows, run:
 
 ```
-$ python /app/execsql.py localhost /app/sql/values.sql
+$ python /app/execsql.py $POSTGRESQL_SERVICE_HOST /app/sql/values.sql
 ```
 
 New random values can be generated with: 

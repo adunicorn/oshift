@@ -26,12 +26,12 @@ spec:
         name: postgresql
     spec:
       containers:
-      - image: adunicorn/loader:latest
-        imagePullPolicy: Always
-        name: loader
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
+#      - image: adunicorn/loader:latest
+#        imagePullPolicy: Always
+#        name: loader
+#        resources: {}
+#        terminationMessagePath: /dev/termination-log
+#        terminationMessagePolicy: File
 
       - env:
         - name: POSTGRESQL_USER

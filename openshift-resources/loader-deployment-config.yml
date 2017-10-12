@@ -33,7 +33,7 @@ spec:
         deploymentconfig: loader
     spec:
       containers:
-      - image: adunicorn/loader@sha256:28c6a63c63db9f55abe0d308b6b1d2e01d96b30bfda924feddfcc095784d393d
+      - image: adunicorn/loader:latest
         imagePullPolicy: Always
         name: loader
         resources: {}
