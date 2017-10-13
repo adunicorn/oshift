@@ -23,7 +23,8 @@ echo "\n\n\n** Creating OpenShift resources from exports.."
 ## PostgreSQL
 oc create -f openshift-resources/postgresql-deployment-config.yml
 oc create -f openshift-resources/postgresql-service.yml
-oc expose dc postgresql --type=LoadBalancer --name=postgresql-ingress
+#oc expose dc postgresql --type=LoadBalancer --name=postgresql-ingress
+oc create -f openshift-resources/postgresql-ingress.yml
 
 ## Redis
 oc create -f openshift-resources/redis-master-deployment-config.yml
