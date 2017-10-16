@@ -30,12 +30,16 @@ spec:
       creationTimestamp: null
       labels:
         app: issuing
-        deploymentconfig: issuing
+        deploymentconfig: consumer
     spec:
       containers:
       - image: adunicorn/consumer:latest
         imagePullPolicy: Always
         name: consumer
+        ports:
+        - containerPort: 5000
+          protocol: TCP
+        resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
@@ -49,10 +53,10 @@ spec:
   - imageChangeParams:
       automatic: true
       containerNames:
-      - redis-slave
+      - consumer
       from:
         kind: ImageStreamTag
-        name: redis:latest
+        name: consumer:latest
         namespace: issuing
     type: ImageChange
 status:

@@ -8,6 +8,11 @@ metadata:
     app: issuing
   name: consumer
 spec:
+  ports:
+  - name: 5000-tcp
+    port: 5000
+    protocol: TCP
+    targetPort: 5000
   selector:
     deploymentconfig: issuing
   sessionAffinity: None
