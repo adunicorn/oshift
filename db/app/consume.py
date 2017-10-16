@@ -3,7 +3,7 @@ import sys
 import os
 import time
 
-print("consume v4")
+print("consume v6")
 
 # Try to connect
 

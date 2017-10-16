@@ -80,6 +80,16 @@ spec:
         name: redis:latest
         namespace: issuing
     type: ImageChange
+  - type: ConfigChange
+  - imageChangeParams:
+      automatic: true
+      containerNames:
+      - issuing
+      from:
+        kind: ImageStreamTag
+        name: issuing:latest
+        namespace: issuing
+    type: ImageChange
 status:
   availableReplicas: 0
   latestVersion: 0
