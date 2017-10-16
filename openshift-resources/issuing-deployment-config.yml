@@ -78,7 +78,7 @@ spec:
       from:
         kind: ImageStreamTag
         name: redis:latest
-        namespace: myredis
+        namespace: issuing
     type: ImageChange
 status:
   availableReplicas: 0
