@@ -33,7 +33,7 @@ spec:
         deploymentconfig: rabbitmq
     spec:
       containers:
-      - image: luiscoms/openshift-rabbitmq:3.6.5-management
+      - image: rabbitmq
         imagePullPolicy: Always
         name: rabbitmq
         ports:
@@ -68,7 +68,7 @@ spec:
       - rabbitmq
       from:
         kind: ImageStreamTag
-        name: rabbitmq:latest
+        name: rabbitmq:3.6.5-management
         namespace: issuing
     type: ImageChange
 status:

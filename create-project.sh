@@ -10,7 +10,7 @@ oc project issuing
 echo "\n\n\n** Importing the docker images"
 oc import-image redis --from=docker.io/bitnami/redis --confirm
 oc import-image issuing --from=docker.io/adunicorn/issuing --confirm
-oc import-image rabbitmq --from=docker.io/luiscoms/openshift-rabbitmq --confirm
+oc import-image rabbitmq --from=docker.io/luiscoms/openshift-rabbitmq --all --confirm
 oc import-image postgresql:9.5 --from=docker.io/centos/postgresql-95-centos7 --confirm
 oc import-image loader --from=docker.io/adunicorn/loader --confirm
 
@@ -34,11 +34,13 @@ oc create -f openshift-resources/redis-master-service.yml
 oc create -f openshift-resources/issuing-deployment-config.yml
 oc create -f openshift-resources/issuing-service.yml
 oc create -f openshift-resources/issuing-route.yml
+oc create -f openshift-resources/issuing-minishift-route.yml
 
 ## RabbitMQ
 oc create -f openshift-resources/rabbitmq-deployment-config.yml
 oc create -f openshift-resources/rabbitmq-service.yml
 oc create -f openshift-resources/rabbitmq-route.yml
+oc create -f openshift-resources/rabbitmq-minishift-route.yml
 
 echo "\n\n\n** Deploying..."
 oc deploy redis-master
