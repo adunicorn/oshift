@@ -28,9 +28,9 @@ with connection.cursor() as cursor:
 
 with connection.cursor() as cursor:
     while True:
-        cursor.execute("SELECT product, amount FROM transactions LIMIT 1 OFFSET floor( random() * %s )", [nRows])
+        cursor.execute("SELECT description, amount FROM transactions LIMIT 1 OFFSET floor( random() * %s )", [nRows])
         record = cursor.fetchone()
-        print("Amount: {amount}\t\tProduct: {product}".format(product=record[0], amount=record[1]))
+        print("Amount: {amount}\t\tDescription: {description}".format(description=record[0], amount=record[1]))
         time.sleep(.300)
         connection.commit()
 
