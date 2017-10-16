@@ -3,7 +3,7 @@ import sys
 import os
 import time
 
-print("consume v2")
+print("intense-load v1")
 
 # Try to connect
 
@@ -28,11 +28,9 @@ with connection.cursor() as cursor:
 
 with connection.cursor() as cursor:
     while True:
-        cursor.execute("SELECT product, amount FROM transactions LIMIT 1 OFFSET floor( random() * %s )", [nRows])
-        record = cursor.fetchone()
-        print("Amount: {amount}\t\tProduct: {product}".format(product=record[0], amount=record[1]))
-        time.sleep(.300)
+        cursor.execute("LOCK table transactions IN ACCESS EXCLUSIVE MODE")
+        print("just locking....")
+        time.sleep(2)
         connection.commit()
-
 connection.close()
 print("Done")
