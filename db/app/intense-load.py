@@ -1,9 +1,11 @@
-import psycopg2
+#import psycopg2
 import sys
 import os
 import time
+import generate_random_transactions
 
-print("intense-load v1")
+print("intense-load v2")
+
 
 # Try to connect
 
@@ -15,21 +17,20 @@ connection_string="host='{host}' port='5432' dbname='{dbname}' user='{user}' pas
         password='user'
     )
 
-print("Using connection string: {connection_string}".format(connection_string=connection_string))
+print("Connecting to:{host} with connection string: {connection_string}".format(host=host, connection_string=connection_string))
 connection = psycopg2.connect(connection_string)
 
 with connection.cursor() as cursor:
-    cursor.execute("SELECT count(*) as count FROM transactions")
-    record = cursor.fetchone()
-    nRows = record[0]
-    print("Total number of transactions: {nRows}".format(nRows=nRows))
-    cursor.close()
-
-
-with connection.cursor() as cursor:
     while True:
-        cursor.execute("LOCK table transactions IN ACCESS EXCLUSIVE MODE")
-        print("just locking....")
+        lock_statement="LOCK table transactions IN ACCESS EXCLUSIVE MODE"
+        print(lock_statement)
+        cursor.execute(lock_statement)
+
+        id, description, price, currency = generate_random_transactions.get_one()
+        insert = "insert into transactions(id, description, amount) VALUES('{id}', '{description}', '{price:.2f} {currency}');".format(id = id, description = description, price = price, currency = currency)
+        print(insert)
+        cursor.execute(insert)
+
         time.sleep(2)
         connection.commit()
 connection.close()

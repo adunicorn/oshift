@@ -1,5 +1,5 @@
 currencies=['CHF', 'EUR', 'USD', 'GBP']
-products=[
+descriptions=[
     ("Cafe", 2.0),
     ("Pizza Margherita", 15.0),
     ("Pizza Napoli", 17.0),
@@ -62,17 +62,19 @@ products=[
     ("Purchase on iTunes", 20.0),
 ]
 
+import uuid
 import random
 from decimal import *
-for i in range(0, 1000):
-    item = products[random.randrange(0, len(products)-1)]
+
+def get_one():
+    item = descriptions[random.randrange(0, len(descriptions)-1)]
     currency = currencies[random.randrange(0, len(currencies)-1)]
-    product = item[0]
+    description = item[0]
     price = item[1]
     osc = 0.3
     variation = random.uniform(0, osc)
     final_price = price * (1 + variation)
+    id = uuid.uuid4()
 
-#    print("{0}: {1:.2f}".format(product, final_price))
-    insert = "insert into transactions(id, product, amount) VALUES('{id}', '{product}', '{price:.2f} {currency}');".format(id = i, product = product, price = final_price, currency = currency)
-    print(insert)
+    return id, description, final_price, currency
+#    print("{0}: {1:.2f}".format(description, final_price))
