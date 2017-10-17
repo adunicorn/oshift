@@ -74,7 +74,8 @@ def get_one():
     osc = 0.3
     variation = random.uniform(0, osc)
     final_price = price * (1 + variation)
+    formatted_price="{0:.2f}".format(final_price)
     id = uuid.uuid4()
 
-    return id, description, final_price, currency
-#    print("{0}: {1:.2f}".format(description, final_price))
+    return id, description, formatted_price, currency
+
