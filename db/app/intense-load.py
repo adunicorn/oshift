@@ -1,10 +1,10 @@
-#import psycopg2
+import psycopg2
 import sys
 import os
 import time
 import generate_random_transactions
 
-print("intense-load v2")
+print("intense-load v4")
 
 
 # Try to connect
