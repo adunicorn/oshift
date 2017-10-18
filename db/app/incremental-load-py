@@ -27,7 +27,7 @@ with connection.cursor() as cursor:
         cursor.execute(lock_statement)
 
         id, description, price, currency = generate_random_transactions.get_one()
-        insert = "insert into transactions(id, description, amount) VALUES('{id}', '{description}', '{price:.2f} {currency}');".format(id = id, description = description, price = price, currency = currency)
+        insert = "insert into transactions(id, description, amount, currency) VALUES('{id}', '{description}', '{price:.2f}', {currency});".format(id = id, description = description, price = price, currency = currency)
         print(insert)
         cursor.execute(insert)
 

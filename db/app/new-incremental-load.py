@@ -13,7 +13,7 @@ def send_one_request():
 
     host = "http://{host}:{port}".format(host=os.getenv('ISSUING_SERVICE_HOST'), port=5000)
     #host = "http://issuing.192.168.64.11.nip.io/"
-    data = {"id" : str(id), "description": description, "amount": str(price) + " " + currency}
+    data = {"id" : str(id), "description": description, "amount": str(price), "currency": currency}
     data_json = json.dumps(data)
     url = host + "/api/transaction"
     headers={'Content-Type': 'application/json'}
