@@ -18,7 +18,7 @@
 
   <tr>
     <td class="left">
-       Ciao Albert. Good morning everyone
+       Ciao guys.
 
     </td>
     <td>
@@ -38,7 +38,7 @@
 
   <tr>
     <td class="left">
-       So, we planned the release of Adunicorn for next Monday.
+       So, next release of Adunicorn, next Monday, ok?
 
     </td>
     <td>
@@ -48,7 +48,7 @@
 
   <tr>
     <td class="left">
-       Is everybody available? Lead developer?
+       Everybody is in? Devs?
 
     </td>
     <td>
@@ -60,7 +60,7 @@
     <td>
     </td>
     <td  class="right">
-        Will be here
+        Ok
 
     </td>
   </tr>
@@ -68,7 +68,7 @@
 
   <tr>
     <td class="left">
-       Nice. DBA?
+       Network?
 
     </td>
     <td>
@@ -80,7 +80,7 @@
     <td>
     </td>
     <td  class="right">
-        Sure, booked.
+        As well
 
     </td>
   </tr>
@@ -88,7 +88,7 @@
 
   <tr>
     <td class="left">
-       What about the Network?
+       Great. Ops?
 
     </td>
     <td>
@@ -100,27 +100,7 @@
     <td>
     </td>
     <td  class="right">
-        As well, covered
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Great. <br>Please, Release Manager, do not schedule any other activity on Monday, we do need your total dedication.<br/>Ehm, what about SysAdmins?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yeah, there we have an issue, Brent, as unfortunately, Anna, the SysAdmin of server SNTP101, is on vacation next Monday, she’ll be back the next week.
+        There we have an issue. Anna, Ops of server SN101, is on vacation next Monday, she’ll be back the next week.
 
     </td>
   </tr>
@@ -140,7 +120,7 @@
     <td>
     </td>
     <td  class="right">
-        Well, yeah, maybe.. We could, yes, but, you know, the server SNTP101 is really unique and the SystemDynamics runs on it… 
+        I'm not sure. It was always Anna to work on that server. No one else knows the server better than her. I suggest to wait her return.
 
     </td>
   </tr>
@@ -148,7 +128,7 @@
 
   <tr>
     <td class="left">
-       SystemDynamics?
+       Ok, got it. Let's postpone the deployment. Is it ok for everyone next Friday? 
 
     </td>
     <td>
@@ -160,7 +140,7 @@
     <td>
     </td>
     <td  class="right">
-        ... it's the core of Adunicorn and it was always Anna to work on SystemDynamics. Nobody else knows SystemDynamics better than her. I strongly suggest to wait for her to be back.
+        Ok.
 
     </td>
   </tr>
@@ -168,7 +148,7 @@
 
   <tr>
     <td class="left">
-       Ok, ok, got it. It’s better to postpone the deployment. Is it ok for everyone next Friday? 
+       Why do we have such a coupling between people and servers?
 
     </td>
     <td>
@@ -180,7 +160,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes
+        We use templates to create servers, so they are identical. But since that moment, we do configuration by hand. Maybe we perform some tests with devs and we go back and forth with settings, and so on…. So, those two identical servers diverge with time. We call it “Configuration shift”. 
 
     </td>
   </tr>
@@ -188,7 +168,7 @@
 
   <tr>
     <td class="left">
-       Can I ask, why do we have such a strict coupling between SysAdmins and servers?
+       We start with identical servers, we end up with unique servers. 
 
     </td>
     <td>
@@ -200,7 +180,7 @@
     <td>
     </td>
     <td  class="right">
-        Well, when we provision servers, we use templates, of course, so they are born identical.  But since that moment, every configuration and deployment is handcrafted. Ops can login into servers and change their configuration, maybe perform tests with developers and rollback settings, perform some fine tuning and so on…. So, those two identical servers tend to diverge more and more over time. That’s what we call “Configuration shift”. 
+        Yes, unique like snowflakes. So, we really need Anna.
 
     </td>
   </tr>
@@ -208,7 +188,7 @@
 
   <tr>
     <td class="left">
-       So, we start with identical servers, but we end up with unique servers. 
+       Ok, got it. See you next Friday, 6 o’clock in the morning.
 
     </td>
     <td>
@@ -220,7 +200,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, so unique that they are like snowflakes. That’s why we really need Anna to be onboard. She’s the only one you can rely on to configure SNTP101 during deployments, because she knows such server better than her dog.
+        Why so early?
 
     </td>
   </tr>
@@ -228,27 +208,7 @@
 
   <tr>
     <td class="left">
-       Bad luck, but that’s life. 
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Ok, go on. An important recommendation: remember to freeze any possible activity, you know that a deployment is such a delicate and risky operation.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       So, see you next Friday, 6 o’clock in the morning.
+       I know, it sucks to wake up early, but during the deployment we have some downtimes. In the morning we have low traffic, in the afternoon the downtime would be more painful.
 
     </td>
     <td>
@@ -260,7 +220,7 @@
     <td>
     </td>
     <td  class="right">
-        Why so early in the morning?
+        Ok, better safe than sorry.
 
     </td>
   </tr>
@@ -268,47 +228,7 @@
 
   <tr>
     <td class="left">
-       Yes, I know guys that waking up early is a pain in the neck, but developers told me that there will be a downtime during the deployment, and we really need to reduce the service disruption as much as possible, so we had to choose the early morning, when we have just few customers using our services. Later in the morning and in the afternoon we have hordes of customers and we cannot have downtimes.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Ok, better safe than sorry. Brent, if we have a downtime we gotta have a Maintenance Page.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Nice catch, Albert, the maintenance page, we really must remember to alert our partner
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Do you remember last year when they forgot to put the maintenance page on?
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Yeah, such a bad gaffe. Ok, guys, see you next Friday. Keep going.
+       Ok, guys, see you next Friday.
 
     </td>
     <td>
@@ -348,7 +268,7 @@
 
   <tr>
     <td class="left">
-       Hi Everyone, ‘morning.
+       Hi everyone, ‘morning.
 
     </td>
     <td>
@@ -360,7 +280,7 @@
     <td>
     </td>
     <td  class="right">
-        Hi Brent. Sorry, I'm very busy... I'm right in the middle of the deployment.
+        Hi Brent. Sorry, I'm very busy... I'm in the middle of the deployment.
 
     </td>
   </tr>
@@ -368,7 +288,7 @@
 
   <tr>
     <td class="left">
-       Good. How much the downtime will last?
+       Good. How long the downtime will last?
 
     </td>
     <td>
@@ -380,7 +300,7 @@
     <td>
     </td>
     <td  class="right">
-        Few minutes yet, Brent, but it depends, we are performing all the operations manually. And of course, the deployment may even fail. Actually, we are struggling with the node SNTP123
+        Few minutes still, I hope. It's all manual. I must be careful, the deployment may even fail. I'm struggling with the node SNTP123
 
     </td>
   </tr>
@@ -400,7 +320,7 @@
     <td>
     </td>
     <td  class="right">
-        So, that’s another one. He have 2 nodes for the web application, and one of them is really very slow, can’t figure out why. 
+        No, another one. We have 2 db nodes, and one is really slow, can’t figure out why. 
 
     </td>
   </tr>
@@ -410,17 +330,7 @@
     <td>
     </td>
     <td  class="right">
-        Do you remember, the configuration shift I told you? Who knows what’s wrong with that second node, there must be some weird difference..
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Wait, let me se... Can’t understand, this shouldn’t happen… Damn..
+        Can’t understand why… Damn..
 
     </td>
   </tr>
@@ -428,7 +338,7 @@
 
   <tr>
     <td class="left">
-       Ok, calm down. Albert, can we remove the maintenance page?
+       Ok, calm down. Can I remove the maintenance page?
 
     </td>
     <td>
@@ -440,7 +350,7 @@
     <td>
     </td>
     <td  class="right">
-        No, not yet, the system is not so stable. Some pròcesses seem to be stuck…
+        No, not yet, the system is not stable. There must be a bug..
 
     </td>
   </tr>
@@ -448,7 +358,7 @@
 
   <tr>
     <td class="left">
-       .. and can you fix them, Albert?
+       Can you fix it, Albert?
 
     </td>
     <td>
@@ -460,17 +370,7 @@
     <td>
     </td>
     <td  class="right">
-        I could investigate, maybe with the support of some developers now, it must be probably a bug.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        We are under pressure now because  we are in the middle of a downtime, and time it running out...
+        No, please, not in the middle of a downtime...
 
     </td>
   </tr>
@@ -490,7 +390,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, of course, we can and we should. Keep in mind that the rollback is just like a new deployment. It may fail as well.
+        We can and we should. Keep in mind that the rollback is a deployment anyway. And may fail as well.
 
     </td>
   </tr>
@@ -498,17 +398,7 @@
 
   <tr>
     <td class="left">
-       My gosh! Let's rollback and let's keep fingers crossed…
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Is it working?
+       My gosh! Do it and fingers crossed…
 
     </td>
     <td>
@@ -520,7 +410,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, it worked. We are back to stability, and we can remove the maintenance page.
+        Ok, it worked. Now we can remove the maintenance page.
 
     </td>
   </tr>
@@ -528,7 +418,7 @@
 
   <tr>
     <td class="left">
-       Nice. I propose to meet in the afternoon, and have a briefing. I’d love to discuss about what didn’t worked, and why it didn’t worked. I really wish we can improve this pròcess, it gives me every time a heart attack.
+       Nice. Let's meet in the afternoon, and have a briefing. I’d love to discuss what didn’t work, and why. I really wish we can improve this pròcess.
 
     </td>
     <td>
@@ -540,7 +430,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, nice idea. Actually I got some proposals.
+        Yes, nice idea. Actually I've got a proposal.
 
     </td>
   </tr>
@@ -557,8 +447,18 @@
 
 
   <tr>
+    <td>
+    </td>
+    <td  class="right">
+        Hi Brent. I just met Andy, the lead developer. He told me the system was ok on his machine.
+
+    </td>
+  </tr>
+
+
+  <tr>
     <td class="left">
-       Hi Albert!
+       So, why wasn’t it working in production?
 
     </td>
     <td>
@@ -570,17 +470,7 @@
     <td>
     </td>
     <td  class="right">
-        Hi Brent.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        I just had a chat with Luciano, the lead developer. He told me the system was running smoothly on his system.
+        Because Andy ran the system on the Dev environment, on servers different than production
 
     </td>
   </tr>
@@ -588,17 +478,7 @@
 
   <tr>
     <td class="left">
-       Uhm, running smoothly on his system... “Works on my machine”.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       So it was working on Luciano’s machine. Why wasn’t it working on productive servers?
+       Snowflakes... You got was the difference was?
 
     </td>
     <td>
@@ -610,57 +490,7 @@
     <td>
     </td>
     <td  class="right">
-        Because you know, servers are snowflakes! Luciano run the system on the Devèlopment environment, I mean on some servers that are not perfectly identical to the productive ones.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       This story again...
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yeah, it’s always the same old story: each single server is one-of-a-kind, it’s a singularity, 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       and we have to work with a lot of singularities.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Ok, I understand it. But in the case of Luciano, what was the difference?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Hard to say…
+        No, it's hard to say…
 
     </td>
   </tr>
@@ -670,7 +500,7 @@
     <td>
     </td>
     <td  class="right">
-        Maybe he changed something in his configuration… or maybe it’s me that did a change that I forgot to replicate them in the developers’ machines.
+        Maybe he changed something… or maybe I did, and I forgot to replicate in his machines... It's not easy, everything is manual...
 
     </td>
   </tr>
@@ -678,27 +508,7 @@
 
   <tr>
     <td class="left">
-       Don’t we have a log with all the modifications we make on servers?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        We have some logs… But they are all manual operations, anyway… Even with those logs, it would be hard to compare servers or to re-execute all the operations.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Ok, I can understand. It seems unavoidable.
+       It seems unavoidable.
 
     </td>
     <td>
@@ -718,7 +528,7 @@
 
   <tr>
     <td class="left">
-       Guys, since we are all together in the same room, can I talk you about another topic?
+       Guys, another topic.
 
     </td>
     <td>
@@ -728,37 +538,7 @@
 
   <tr>
     <td class="left">
-       Next Friday will be the Black Friday
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Wow, the Black Friday. We will have a lot of traffic, like last year.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Brent, Do we have an idea how much traffic will we have?
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Yes, we have. We made some figures and we predict about 4 times the traffic we have today. This, for 2 days only.
+       Next Friday will be the Black Friday. We predict about 4 times the traffic.
 
     </td>
     <td>
@@ -780,17 +560,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, I’m a bit worried, of course! 4 times the traffic means we will need at least 2 more db servers. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        And that’s my gut feeling. May be more. May be even 3.
+        Yes, a bit . We will need at least 2 more db servers. Maybe 3.
 
     </td>
   </tr>
@@ -798,7 +568,7 @@
 
   <tr>
     <td class="left">
-       No problem, I will ask 3 more servers.
+       No problem, I will ask for 3 more servers.
 
     </td>
     <td>
@@ -810,7 +580,7 @@
     <td>
     </td>
     <td  class="right">
-        Uhm, that’s not so easy… The problem is servers are a bit hard to get.
+        Uhm, that’s not so easy… Servers are a bit hard to get.
 
     </td>
   </tr>
@@ -820,7 +590,17 @@
     <td>
     </td>
     <td  class="right">
-        You have to create them, to install the operating system, to make all the configurations…
+        You have to create them, to install the operating system, to configure them…
+
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+    </td>
+    <td  class="right">
+        You create them from scratch, copying from other snowflakes servers.
 
     </td>
   </tr>
@@ -828,7 +608,7 @@
 
   <tr>
     <td class="left">
-       … and you have no reference, because of the configuration shift…
+       How much time for a server?
 
     </td>
     <td>
@@ -840,7 +620,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes! Correct! You have to create them from scratch, more or less copying from our snowflakes servers.
+        Days... may be weeks… Then, you need to test them...
 
     </td>
   </tr>
@@ -848,57 +628,7 @@
 
   <tr>
     <td class="left">
-       I got it. How much time for a server?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Days... may be weeks… In addiction, you need to test them, right after the creation.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       So, not only is it a slow pròcess. It must also be expensive.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yes, it is. It’s slow and expensive. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        But, sorry, you should have asked for those additional servers in time, Brent, maybe one month ago already.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Sorry, my fault.
+       So, not only slow, it's also expensive.
 
     </td>
     <td>
@@ -908,7 +638,7 @@
 
   <tr>
     <td class="left">
-       Albert, do you think Anna will be able to build those servers in time anyway?
+       Ask Anna to build those 3 servers anyway.
 
     </td>
     <td>
@@ -920,37 +650,7 @@
     <td>
     </td>
     <td  class="right">
-        May be, I hope so.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        The problem, Brent, is that you cannot scale the number of servers without increasing the number of people that who care of them. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        The more servers you want, the more System Engineers you must have.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Each server consumes human time. Wanna double your platform? Double your staff...
+        Anna is really too busy. Each server consumes human time. Wanna double your platform? Double your staff...
 
     </td>
   </tr>
@@ -970,17 +670,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, can’t escape.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Unless…
+        Well, you could escape if...
 
     </td>
   </tr>
@@ -988,7 +678,7 @@
 
   <tr>
     <td class="left">
-       Unless what?
+       If?
 
     </td>
     <td>
@@ -1000,7 +690,7 @@
     <td>
     </td>
     <td  class="right">
-        Unless, Brent… I told you I had a good proposal.
+        I told you I had a proposal.
 
     </td>
   </tr>
@@ -1030,7 +720,7 @@
     <td>
     </td>
     <td  class="right">
-        Ok, Brent. I propose you a game.
+        Ok, Brent. Let's do a game.
 
     </td>
   </tr>
@@ -1040,27 +730,7 @@
     <td>
     </td>
     <td  class="right">
-        Let’s say we had Immutability and Automation.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Immutability and Automation?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yes. Immutability and Automation. Take an immutable server.
+        Let’s say we had Immutability and Automation. Take an immutable server.
 
     </td>
   </tr>
@@ -1080,7 +750,7 @@
     <td>
     </td>
     <td  class="right">
-         Ok, let's start from the beginning. Immutability is when you create something that cannot be changed anymore. For example, an immutable server is a server you put in your cloud, and which no one can change anymore, for any reason.
+        An immutable server is a server you put in your cloud, and no one can change anymore.
 
     </td>
   </tr>
@@ -1088,7 +758,7 @@
 
   <tr>
     <td class="left">
-       Doesn’t seem so useful.
+       Not so useful.
 
     </td>
     <td>
@@ -1100,17 +770,7 @@
     <td>
     </td>
     <td  class="right">
-        It seems so, indeed, but follow me.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Focus on that server. Imagine we obtained that server printing it out from a Master Copy.
+        It is, indeed. Suppose you obtained that server printing it out from a Master Copy.
 
     </td>
   </tr>
@@ -1130,16 +790,6 @@
     <td>
     </td>
     <td  class="right">
-        Yes, Brent. Suppose you had a Master Copy of a server. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
         Think of the Master Copy of the 1 Franc coin.
 
     </td>
@@ -1150,7 +800,17 @@
     <td>
     </td>
     <td  class="right">
-        You we use it to print other coins: from the master copy of the 1 Franc, we can print millions Franc coins, each exactly equal to the others.
+        You use it to print other coins:, you print millions Franc coins from it, identical coins.
+
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+    </td>
+    <td  class="right">
+        Take SN101, take its Master Copy, and print SN101 from it. An immutable copy of it.
 
     </td>
   </tr>
@@ -1158,7 +818,7 @@
 
   <tr>
     <td class="left">
-       Ok, go on.
+       What's benefit...
 
     </td>
     <td>
@@ -1170,27 +830,7 @@
     <td>
     </td>
     <td  class="right">
-        Equally, instead of the server SNTP101, we could have its Master Copy, and print SNTP101 from it. An immutable copy of SNTP101.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       I cannot see what the advantage is, honestly…
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Oh, we could have a lot of advantages.
+        Oh, we could have a lot of benefits...
 
     </td>
   </tr>
@@ -1200,7 +840,7 @@
     <td>
     </td>
     <td  class="right">
-        Tell me, Brent: would you like to have two copies of SNTP101: SNTP a, and SNTP b?
+        Tell me, Brent: would you like to have two copies of SN101?
 
     </td>
   </tr>
@@ -1217,18 +857,8 @@
 
 
   <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yes, both from it.
-
-    </td>
-  </tr>
-
-
-  <tr>
     <td class="left">
-       Ok, they would be identical, then, if I understand correctly
+       Ok, they would be identical, then...
 
     </td>
     <td>
@@ -1238,7 +868,7 @@
 
   <tr>
     <td class="left">
-       Uhm.. No configuration shift, you mean? Less surprises?
+       Uhm.. No configuration shift...
 
     </td>
     <td>
@@ -1250,37 +880,7 @@
     <td>
     </td>
     <td  class="right">
-        Absolutely. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        But there's more. If you could print servers on demand....
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Think of Anna. You know that Anna is the Janitor of SNTP101: that sever is her personal pet.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        If we could print 20 copies out of the Master Copy, what would Anna’s task be?
+        But there's more. Think of Anna. If we could print 20 copies of SN101, what would Anna’s job?
 
     </td>
   </tr>
@@ -1288,7 +888,7 @@
 
   <tr>
     <td class="left">
-       I guess…. Working on the Master Copy, probably?
+       It would be useless for her to work on 20 identical copies...
 
     </td>
     <td>
@@ -1300,7 +900,7 @@
     <td>
     </td>
     <td  class="right">
-        Correct! If we had Immutability, it would be no sense to work on multiple identical copies. You would rather focus on their Master Copy.
+        Correct! She would rather focus on the Master Copy.
 
     </td>
   </tr>
@@ -1310,7 +910,7 @@
     <td>
     </td>
     <td  class="right">
-        Do you guess what this means? We would all focus on the only source of truth for a server…
+        If we all could focus on the single source of truth for a server...
 
     </td>
   </tr>
@@ -1318,7 +918,7 @@
 
   <tr>
     <td class="left">
-       Sure, without spending precious time replicating the configuration over and over, on each server.
+       ...without spending precious time replicating the configuration over and over, on each server.
 
     </td>
     <td>
@@ -1330,7 +930,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes. We would work only once.
+        ...we would work only once.
 
     </td>
   </tr>
@@ -1340,7 +940,7 @@
     <td>
     </td>
     <td  class="right">
-        So, we could concentrate our effort on the root copy, rather than on all the replica.
+        and we could concentrate our effort setting our quality standards to the highest limit.
 
     </td>
   </tr>
@@ -1350,17 +950,7 @@
     <td>
     </td>
     <td  class="right">
-        Doing our job once, we could afford to set our quality standards to the highest limit.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Do once, do the best possible way.
+        Do once, at your best.
 
     </td>
   </tr>
@@ -1368,7 +958,7 @@
 
   <tr>
     <td class="left">
-       What’s inside this Master Copy, Albert?
+       What’s inside this Master Copy?
 
     </td>
     <td>
@@ -1388,7 +978,7 @@
 
   <tr>
     <td class="left">
-       So, when you say configuration, you mean network…
+       Interesting. No differences between server... So SN101 is no more one-of-a-kind.
 
     </td>
     <td>
@@ -1400,7 +990,7 @@
     <td>
     </td>
     <td  class="right">
-        Everything.
+        Yes. Every configuration would be as simple as a text file, stored in the Master Copy, Any System Engineer who worked on the Master Copy can manage all of its copies.
 
     </td>
   </tr>
@@ -1408,57 +998,7 @@
 
   <tr>
     <td class="left">
-       Interesting. No differences between servers… And it means that our famous server SNTP101 would have nothing special, compared to its other brothers.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yes, absolutely. Every configuration would be as simple as a text file, stored in the Master Copy, for all the System Engineers to read and manage. Anyone who had worked on the Master Copy can manage anyone of its copies.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Wait wait, if SNTP101 is no special compared to the other copies, this could mean less dependency between a single system engineer and... how did you call it? a snowflake.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        You said it, Brent.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Remember when before we discussed about how doubling the number of snowflake servers required doubling the human staff?
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       …Yes! And now I'm having the feeling that running twice the number of some identical, immutable copies… well, yes, it's different, it's easier, or at least, it's not the same, I got the message.
+       Wait wait, so, no dependency between a single system engineer and a server?
 
     </td>
     <td>
@@ -1468,7 +1008,7 @@
 
   <tr>
     <td class="left">
-       Amazing.
+       And running twice the number of some identical, immutable copies it's easier then running snowflakes.
 
     </td>
     <td>
@@ -1490,7 +1030,7 @@
     <td>
     </td>
     <td  class="right">
-        You prepare a server, spending all the time and effort you need to write, test and fine tune the needed configuration. 
+        You prepare a server, you invest your time to write and test its configuration. 
 
     </td>
   </tr>
@@ -1500,7 +1040,7 @@
     <td>
     </td>
     <td  class="right">
-        And then you print one or more instances, and you let them run.
+        Then you print one or more instances. And you run them.
 
     </td>
   </tr>
@@ -1508,27 +1048,7 @@
 
   <tr>
     <td class="left">
-       And they are immutable.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Yes, immutable.
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Cannot work, sorry. We do need mutability, sooner or later. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change…
+       But they are immutable. Cannot work, sorry. We do need mutability, sooner or later. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change…
 
     </td>
     <td>
@@ -1540,7 +1060,7 @@
     <td>
     </td>
     <td  class="right">
-        You don’t need to change the running servers! You have to change the Master Copy. Then you will print the new servers, configured with the new version. And you will let them run.
+        You don’t need to change the servers! Change the Master Copy. Then print the new servers, with the new version. And let them run.
 
     </td>
   </tr>
@@ -1548,7 +1068,7 @@
 
   <tr>
     <td class="left">
-       Uhm. What am I supposed to do with the old servers running the old version?
+       Uhm. What should I do with the old servers?
 
     </td>
     <td>
@@ -1560,7 +1080,7 @@
     <td>
     </td>
     <td  class="right">
-        You can dispose of them, when you feel confident. It’s called Blue/Green Deployment. You never change the configuration of a server in production: you rather put a new server version side by side to the old one, and gracefully move the customers from the old version to the new one.
+        Dispose of them. It’s called Blue/Green Deployment. Never change the configuration of a server in production: rather, put new versions side by side to the old one, and gracefully move the customers from the old version to the new one.
 
     </td>
   </tr>
@@ -1568,7 +1088,17 @@
 
   <tr>
     <td class="left">
-       Wait wait, gracefully means what I imagine?
+       Gracefully means without any downtime?
+
+    </td>
+    <td>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td class="left">
+       But today’s problem wasn’t caused by downtime, but by some bugs Andy didn't see in HIS environment.
 
     </td>
     <td>
@@ -1580,37 +1110,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, Brent: gracefully means without any downtime at all, if you want. 
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       No more maintenance pages. So, this is really exciting.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       But to be honest, Albert... Think of today. Today’s problem wasn’t caused by downtime, but by some weird problem Luciano didn’t detect in his environment.
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        You nailed it.
+        You said it.
 
     </td>
   </tr>
@@ -1630,7 +1130,7 @@
     <td>
     </td>
     <td  class="right">
-        "His environment"", you said. Who did prepare the devèlopment servers Luciano is using?
+        "HIS environment". Who prepared Andy's servers?
 
     </td>
   </tr>
@@ -1638,7 +1138,7 @@
 
   <tr>
     <td class="left">
-       Some System Engineers did... then apparently Luciano changed some configuration, may be, then…
+       Some System Engineers did... then he changed some configuration...
 
     </td>
     <td>
@@ -1648,7 +1148,7 @@
 
   <tr>
     <td class="left">
-       Wait, I understand... If we had a Master Copy Luciano could have used a server printed out from it.
+       Oh, I understand... If he printed out his servers from a Master Copy.
 
     </td>
     <td>
@@ -1660,7 +1160,7 @@
     <td>
     </td>
     <td  class="right">
-        And that server would have been identical to the one used in production.
+        They would be identical to the productive one.
 
     </td>
   </tr>
@@ -1668,7 +1168,7 @@
 
   <tr>
     <td class="left">
-       Neat! So, Luciano and the other developers could have been developing the application on a perfect copy of the productive server, from the early stages, from the very first day...
+       Neat! So, developers could have been developing on pefect copies of production from the very first day...
 
     </td>
     <td>
@@ -1688,7 +1188,7 @@
 
   <tr>
     <td class="left">
-       And what if Luciano needs to modify the server, to adapt its configuration to the application?
+       What if Andy needs to modify the server for his needs?
 
     </td>
     <td>
@@ -1700,7 +1200,7 @@
     <td>
     </td>
     <td  class="right">
-        He could modify the Master Copy, together with Anna. So, any modification would be tracked there, and propagated to any replica copy from that moment on.
+        He could modify the Master Copy, together with Anna. So, any modification would be tracked there, and propagated to any replica copy.
 
     </td>
   </tr>
@@ -1720,18 +1220,8 @@
     <td>
     </td>
     <td  class="right">
-        Rollbacks are just deployment. What you have to do is to deploy servers with the old versions.
+        Rollbacks are just deployment. You deploy the servers with the old versions.
 
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       What if… No, I got it. They are immutable, they cannot have changed. If they used to work in the past, well, they are still exactly the same now, they must be working as before, if put in production again. 
-
-    </td>
-    <td>
     </td>
   </tr>
 
@@ -1740,7 +1230,7 @@
     <td>
     </td>
     <td  class="right">
-        After all, no one changed a single line in them.
+        No one changed a single line in them.
 
     </td>
   </tr>
@@ -1748,7 +1238,17 @@
 
   <tr>
     <td class="left">
-       Ok, so Immutability can solve each of our problems.
+       You mean, if they used to work in the past, they must be working as before if put in production again. 
+
+    </td>
+    <td>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td class="left">
+       Ok, so Immutability is the solution.
 
     </td>
     <td>
@@ -1780,7 +1280,7 @@
     <td>
     </td>
     <td  class="right">
-        Automation is the ability to print servers quickly. If nothing is done manually, if every single little step is automated, you could get a server running a program, and you could get it very very quickly.
+        Automation is the ability to print servers quickly. If can automate everything. you could get a new server  very very quickly.
 
     </td>
   </tr>
@@ -1868,7 +1368,7 @@
 
   <tr>
     <td class="left">
-       Impressing. If we could have this, the Black Friday wouldn’t be a problem at all. I could ask for 3 servers and I would get them in half a hour, probably…
+       Impressing. If we could have this, Black Friday wouldn’t be a problem, I could ask for 3 servers and get them in half a hour.
 
     </td>
     <td>
@@ -1880,17 +1380,7 @@
     <td>
     </td>
     <td  class="right">
-        Actually you could do much more. Everything is very automated, ok? And you can get a server in terms of seconds, with no human intervention at all. Right?
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Suppose to get a little program that automatically creates new servers when the traffic increases, and discard of them when our customers are idle..
+        Actually you could do much more. Suppose to get a little program that creates new servers when the traffic increases, and discard of them when our customers are idle..
 
     </td>
   </tr>
@@ -1898,7 +1388,7 @@
 
   <tr>
     <td class="left">
-       You mean, we could have a dynamic number of servers, depending on the number of requests?
+       We could have a dynamic number of servers, depending on the number of requests.
 
     </td>
     <td>
@@ -1910,7 +1400,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes. For example, we could save money, and switch off half our structure during the night. Or have the infrastructure respond to unpredictable spikes.
+        Yes. We could save money, and switch off half our infrastructure during the night. Or respond to unpredictable spikes.
 
     </td>
   </tr>
@@ -1918,7 +1408,7 @@
 
   <tr>
     <td class="left">
-       How could System Engineers manage such a network, with so many moving parts?
+       How could Ops manage such a network, with so many moving parts?
 
     </td>
     <td>
@@ -1930,7 +1420,7 @@
     <td>
     </td>
     <td  class="right">
-        They could start managing cattle rather than pets.
+        They must manage cattle rather than pets.
 
     </td>
   </tr>
@@ -1950,7 +1440,7 @@
     <td>
     </td>
     <td  class="right">
-        I mean, we treat servers as they were pets. We give them names. 
+        I mean, we treat our servers as pets. We give them names. 
 
     </td>
   </tr>
@@ -1958,7 +1448,7 @@
 
   <tr>
     <td class="left">
-       It's true, we have SNTP101, there’s SNX10, and the like.
+       It's true, we have SN101, there’s SNX10
 
     </td>
     <td>
@@ -1970,7 +1460,7 @@
     <td>
     </td>
     <td  class="right">
-        And servers have owners too. Take Anna, for example. She knows everything about her pet: when it has born, what's its health status, all it's little secrets.. She cares, it’s her pet, ok? She’s even jealous, and let no one take care of SNTP101. Remember, you even postponed a product release because Anna was in vacation.
+        And they have owners too. Take Anna, for example. She knows everything about her pet: when it's born, its health, its little secrets.. She’s even jealous, and let no one take care of SN101. We even delayed a release because Anna was in vacation.
 
     </td>
   </tr>
@@ -1990,7 +1480,7 @@
     <td>
     </td>
     <td  class="right">
-        Think of farmers. They may easily have hundred or thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They think in terms of "buying 20% more sheep", or "move half the sheep from here to there". If a sheep dies, they replace it. If two die, well, it’s a number. They are all identical. They manage them as a moltitude.
+        Think of farmers. They easily have thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They say "Let's buy 20% more sheep", or "move half the sheep from here to there". If 3 sheep dies, they replace them, it’s a number. They are all identical.
 
     </td>
   </tr>
@@ -2000,7 +1490,7 @@
     <td>
     </td>
     <td  class="right">
-        System engineers in many companies do the same. They focus on the Enterprise network health, not on the single SNTP101.
+        Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
 
     </td>
   </tr>
@@ -2020,7 +1510,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Those companies focus more on their business capabilities than on the single servers. And we could do the same. We could use special software for orchestrating and managing our cattle of servers.
+        Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. We could do the same. We could use special software for orchestrating our cattle of servers.
 
     </td>
   </tr>
@@ -2048,7 +1538,7 @@
 
   <tr>
     <td class="left">
-       Is there any software for doing all of this already available on the market? I mean, what was the dashboard you showed me before, when you created and then destroyed some servers? Was it a prototype or what?
+       What was the dashboard you showed me before, was it a prototype?
 
     </td>
     <td>
@@ -2080,7 +1570,7 @@
     <td>
     </td>
     <td  class="right">
-        You know, Brent, a lot of huge companies have been investing on this field, in the last years. I showed you Kubernetes, that is the orchestration tool written and used by Google. OpenShift is another one, by RedHat, and it is specially suited for Enterprises such as our company. For all of them, the basic building block is Docker. This is what really makes immutability and automation possible.
+        You know, Brent, a lot of huge companies have been investing on this field, in the last years. Kubernetes is the orchestration tool written and used by Google. OpenShift is by RedHat, and is specially suited for Enterprises like us. The basic building block is Docker which makes immutability and automation possible.
 
     </td>
   </tr>
@@ -2088,27 +1578,7 @@
 
   <tr>
     <td class="left">
-       Albert, I'm not a technical person, but can you help me understand this Docker?
-
-    </td>
-    <td>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>
-    </td>
-    <td  class="right">
-        Say you run some programs in a server, ok?
-
-    </td>
-  </tr>
-
-
-  <tr>
-    <td class="left">
-       Ok
+       Albert, I'm not a technical person...
 
     </td>
     <td>
@@ -2128,7 +1598,7 @@
 
   <tr>
     <td class="left">
-       Sure. Of course, I must take care that they don't interfer one with the others in a bad way.
+       Sure. and I must take care that they don't interfer one with the others in a bad way.
 
     </td>
     <td>
@@ -2148,7 +1618,7 @@
 
   <tr>
     <td class="left">
-       So, it isolates programs from eachothers?
+       So, it isolates programs from each others?
 
     </td>
     <td>
@@ -2160,7 +1630,7 @@
     <td>
     </td>
     <td  class="right">
-        Yes! It segregates a program in sort a of cage. And also, it allows to build and configure that cage, in a very detailed way, so that a cage can resemble a given server in all of its aspects, from network, to certifications, and so on. For example, we may build a cage that is identical to our SNTP101
+        Yes! It segregates it in sort a of cage, a container. And it allows to build and configure that cage, in a very detailed way, so that a cage can resemble a given server in all of its aspects, from network, to certifications, and so on. For example, we may build a cage that is identical to our SN101
 
     </td>
   </tr>
