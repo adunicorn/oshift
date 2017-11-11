@@ -44,4 +44,6 @@ with open('dialog.md') as f:
 
 print """
 </table>
+</body>
+</html>
 """
