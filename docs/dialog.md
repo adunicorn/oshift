@@ -71,37 +71,37 @@
 2# Ok, Brent. Let's do a game.
 2# Let’s say we had Immutability and Automation. Take an immutable server.
 1# What do you mean with Immutable?
-2# An immutable server is a server you put in your cloud, and no one can change anymore.
+2# An immutable server is a server you place in your cloud, and no one can change anymore.
 1# Not so useful.
 2# It is, indeed. Suppose you obtained that server printing it out from a Master Copy.
 1# Printing it out from a Master Copy?
 2# Think of the Master Copy of the 1 Franc coin.
 2# You use it to print other coins:, you print millions Franc coins from it, identical coins.
 2# Take SN101, take its Master Copy, and print SN101 from it. An immutable copy of it.
-1# What's benefit...
+1# What's benefit?
 2# Oh, we could have a lot of benefits...
 2# Tell me, Brent: would you like to have two copies of SN101?
 1# Both printed out from the same master copy?
 1# Ok, they would be identical, then...
 1# Uhm.. No configuration shift...
-2# But there's more. Think of Anna. If we could print 20 copies of SN101, what would Anna’s job?
+2# But there's more. Think of Anna. If we could print 20 copies of SN101, what would be Anna’s job?
 1# It would be useless for her to work on 20 identical copies...
 2# Correct! She would rather focus on the Master Copy.
 2# If we all could focus on the single source of truth for a server...
 1# ...without spending precious time replicating the configuration over and over, on each server.
 2# ...we would work only once.
-2# and we could concentrate our effort setting our quality standards to the highest limit.
+2# and we could concentrate all our effort setting our quality standards to the highest limit.
 2# Do once, at your best.
 1# What’s inside this Master Copy?
 2# Everything you need to run our application. Network, configuration, the application itself…
 1# Interesting. No differences between server... So SN101 is no more one-of-a-kind.
-2# Yes. Every configuration would be as simple as a text file, stored in the Master Copy, Any System Engineer who worked on the Master Copy can manage all of its copies.
-1# Wait wait, so, no dependency between a single system engineer and a server?
-1# And running twice the number of some identical, immutable copies it's easier then running snowflakes.
+2# Yes. Every configuration would be as simple as a text file, stored in the Master Copy, any System Engineer who worked on the Master Copy can manage all of its copies.
+1# Wait wait, so, any of them, so no dependency between a single system engineer and a server?
+2# And running twice the number of some identical, immutable copies it's easier then running snowflakes.
 1# Still, I feel confused. How a deployment work with those immutable servers?
 2# You prepare a server, you invest your time to write and test its configuration. 
 2# Then you print one or more instances. And you run them.
-1# But they are immutable. Cannot work, sorry. We do need mutability, sooner or later. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change…
+1# But they are immutable. Cannot work, sorry. We do need mutability, sooner or later. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change the servers...
 2# You don’t need to change the servers! Change the Master Copy. Then print the new servers, with the new version. And let them run.
 1# Uhm. What should I do with the old servers?
 2# Dispose of them. It’s called Blue/Green Deployment. Never change the configuration of a server in production: rather, put new versions side by side to the old one, and gracefully move the customers from the old version to the new one.
@@ -113,18 +113,18 @@
 1# Some System Engineers did... then he changed some configuration...
 1# Oh, I understand... If he printed out his servers from a Master Copy.
 2# They would be identical to the productive one.
-1# Neat! So, developers could have been developing on pefect copies of production from the very first day...
+1# And immutable! Neat! So, developers could have been developing on pefect copies of production from the very first day...
 2# Yes.
 1# What if Andy needs to modify the server for his needs?
 2# He could modify the Master Copy, together with Anna. So, any modification would be tracked there, and propagated to any replica copy.
 1# What about rollbacks?
-2# Rollbacks are just deployment. You deploy the servers with the old versions.
+2# They are just deployment. You deploy the servers with the old versions.
 2# No one changed a single line in them.
 1# You mean, if they used to work in the past, they must be working as before if put in production again. 
 1# Ok, so Immutability is the solution.
 2# Immutability, plus Automation.
 1# Yes, right, you told me about Automation. Tell me more about it.
-2# Automation is the ability to print servers quickly. If can automate everything. you could get a new server  very very quickly.
+2# Automation is the ability to print servers quickly. If can automate everything. You could get a new server  very very quickly.
 1# How much?
 2# Just seconds.
 1# Really?
@@ -133,7 +133,7 @@
 2# Done. Wanna have 3 more copies? Done.
 2# Now, dispose of them. Let’s drop 2 servers.
 2# Seen?
-1# Impressing. If we could have this, Black Friday wouldn’t be a problem, I could ask for 3 servers and get them in half a hour.
+1# Impressing. If I could have this, Black Friday wouldn’t be a problem, I could ask for 3 servers and get them in half a hour.
 2# Actually you could do much more. Suppose to get a little program that creates new servers when the traffic increases, and discard of them when our customers are idle..
 1# We could have a dynamic number of servers, depending on the number of requests.
 2# Yes. We could save money, and switch off half our infrastructure during the night. Or respond to unpredictable spikes.
@@ -142,7 +142,8 @@
 1# What do you mean?
 2# I mean, we treat our servers as pets. We give them names. 
 1# It's true, we have SN101, there’s SNX10
-2# And they have owners too. Take Anna, for example. She knows everything about her pet: when it's born, its health, its little secrets.. She’s even jealous, and let no one take care of SN101. We even delayed a release because Anna was in vacation.
+2# And they have owners too. Take Anna, for example. She knows everything about her pet: when it's born, its health, its little secrets.. She’s even jealous, and let no one take care of SN101.
+1# I know, we even delayed a release because Anna was in vacation.
 1# I remember. And what's the other  approach to servers?
 2# Think of farmers. They easily have thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They say "Let's buy 20% more sheep", or "move half the sheep from here to there". If 3 sheep dies, they replace them, it’s a number. They are all identical.
 2# Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
@@ -151,28 +152,28 @@
 1# &nbsp;
 1# <h1>Docker</h2>
 1# What was the dashboard you showed me before, was it a prototype?
-2# It was Docker, with Kubernets and OperShift.
+2# It was Docker, with Kubernetes and OperShift.
 1# Sorry?
 2# You know, Brent, a lot of huge companies have been investing on this field, in the last years. Kubernetes is the orchestration tool written and used by Google. OpenShift is by RedHat, and is specially suited for Enterprises like us. The basic building block is Docker which makes immutability and automation possible.
 1# Albert, I'm not a technical person...
 2# In a server you can run dozens, or hundreds of programs.
 1# Sure. and I must take care that they don't interfer one with the others in a bad way.
-2# Exactly! If you run the server with Docker, Docker tricks each of those programs, and let it believe it is the only one existing in the server.
+2# Exactly! If you run the server within Docker, Docker tricks each of those programs, and let it believe it is the only one existing in the server.
 1# So, it isolates programs from each others?
-2# Yes! It segregates it in sort a of cage, a container. And it allows to build and configure that cage, in a very detailed way, so that a cage can resemble a given server in all of its aspects, from network, to certifications, and so on. For example, we may build a cage that is identical to our SN101
+2# Yes! It segregates it in sort a of cage, a container. And it allows to build and configure that cage, in a very detailed way, so that a cage resemble a server in all details, from network, to certifications, and so on. For example, we may build a cage that is identical to our SN101
 1# The Master Copy!
 2# Yes
 1# Ok. So that Master Copy is the description of the server.
 2# Of the server and the program running inside it!
 1# Ok, both: the server and the program. Makes sense.
-1# This makes me wonder: who is supposed to work on this Master Copy, then? The System Administrator, or the programmer?
+1# Who is supposed to work on this Master Copy, then? The Ops, or the Developer?
 2# Brent, you nailed it. This is probably the most important topic. Both.
-1# Both? The System Administrator first, then the programmer?
+1# Both? Ops first, Dev later?
 2# No, both, together, since the beginning. It must be a collaborative endeavour. Devs and Ops, together.
 1# Has it anything to do with this DevOps I heard about.
 2# Absolutely. Dev and Ops. Or, if you think about it: Dev, Security and Ops. The so called DevSecOps.
-1# Very pioneristic.
-2# Not at all, indeed. It's a thing, already. A lot of companies adopted Docker and DevOps. It is just the modern school for IT companies.
+1# It's science fiction.
+2# Not at all, indeed. It's a matter of fact. A lot of companies adopted Docker and DevOps already. It is just the modern school for IT companies.
 2# But let me show what I did in my spare time, please.
 2# Do you remember our Transaction Service?
 1# The service our customers use to retrieve information about their credit card transactions?
