@@ -215,52 +215,102 @@
 </node>
 </node>
 <node CREATED="1510128902302" ID="ID_1853490631" MODIFIED="1510128906142" POSITION="right" TEXT="Seconda idea">
-<node CREATED="1510129175940" ID="ID_1721390985" MODIFIED="1510151535216" TEXT="plot">
-<node CREATED="1510129379608" ID="ID_518196430" MODIFIED="1510152140830" TEXT="The day before">
-<node CREATED="1510152178485" ID="ID_1505865299" MODIFIED="1510152187690" TEXT="We need to schedule the deployment">
-<node CREATED="1510152143101" ID="ID_1835148490" MODIFIED="1510152166084" TEXT="PM asks about the availability of everyone"/>
-<node CREATED="1510152168538" ID="ID_1024995857" MODIFIED="1510152177603" TEXT="if only one isn&apos;t available">
-<node CREATED="1510152192232" ID="ID_250295318" MODIFIED="1510152200731" TEXT="we must postpone, since">
-<node CREATED="1510152200982" ID="ID_1883598519" MODIFIED="1510152218078" TEXT="only that person knows how the specific server works"/>
-<node CREATED="1510152218743" ID="ID_749057486" MODIFIED="1510152225482" TEXT="servers are snowflakes"/>
+<node CREATED="1510129175940" ID="ID_1721390985" MODIFIED="1510292765169" TEXT="plot">
+<node CREATED="1510129379608" ID="ID_518196430" MODIFIED="1510302617511" TEXT="The day before">
+<node CREATED="1510152178485" ID="ID_1505865299" MODIFIED="1510302618072" TEXT="We need to schedule the deployment">
+<node CREATED="1510152143101" ID="ID_1835148490" MODIFIED="1510302619325" TEXT="PM asks about the availability of everyone">
+<node CREATED="1510292825375" ID="ID_490231216" MODIFIED="1510293319204" TEXT="That&apos;s the story of an ordinary deployment in our company">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510292849701" ID="ID_1762438573" MODIFIED="1510293319206" TEXT="In few days we are releasing a new version of our portal.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510292860149" ID="ID_1091212360" MODIFIED="1510293319207" TEXT="Meet Anna, the PM.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293029783" ID="ID_1097956921" MODIFIED="1510302070140" TEXT="Anna asks &quot;Is everybody available on the next Monday? Is there the reference developer? Do we have the DBA? Network, is it covered?">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293135852" ID="ID_199228552" MODIFIED="1510293715549" TEXT="Anna asks the release manager not to schedule any other task, since the company will need all of his engagement.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1510152168538" ID="ID_1024995857" MODIFIED="1510309988296" TEXT="if only one isn&apos;t available">
+<node CREATED="1510152192232" ID="ID_250295318" MODIFIED="1510302621901" TEXT="we must postpone, since">
+<node CREATED="1510152200982" ID="ID_1883598519" MODIFIED="1510302623136" TEXT="only that person knows how the specific server works">
+<node CREATED="1510293079336" ID="ID_1941447078" MODIFIED="1510302129194" TEXT="Some one says the Sherlock, the SysAdmin will be off, on vacation">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293371318" ID="ID_1829226417" MODIFIED="1510293701785" TEXT="&quot;OK - asks Anna - can anyone replace him for this deployment?&quot;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293394108" ID="ID_519120078" MODIFIED="1510293696150" TEXT="&quot;Yes and no - Paolo&apos;s boss says- as Paolo is actually the only one who perfectly knows the target server we must deploy to. Of course we could asks someone else to work on his behalf, but should we have any trouble... you know, the server SNPTP101 is so peculiar, it runs the FooBar db, Paolo has been always assigned to it, he configured it, and no one else really knows how it exactly works&quot;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510152218743" ID="ID_749057486" MODIFIED="1510294026859" TEXT="&quot;Ok - Anna says - let&apos;s postpone the deployment the next week, it&apos;s safer&quot;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293784879" ID="ID_1533978140" MODIFIED="1510294026860" TEXT="We have two terms for this phenomena: &quot;Configuration shift&quot; and &quot;Snowflake&quot;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293725499" ID="ID_717668204" MODIFIED="1510294026860" TEXT="We may start with two identical servers, but since they are handcrafted, and since operators and developers log into them and make changes to their configuration, they try and rollback settings, they make fine tunings on demand, they often end up to diverge, and divergence gets higher over time.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510293947575" ID="ID_544950696" MODIFIED="1510294026866" TEXT="And each server ends up being a very unique server. It&apos;s very likely that the operator who worked on it during the months and the years ends up being the only one who knows all the nuances and secrets, and is the only one who can actualy work on it.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
 </node>
-<node CREATED="1510152235611" ID="ID_1862512856" MODIFIED="1510152272024" TEXT="We plan the deployment, freezing any other activities"/>
 </node>
-<node CREATED="1510129425943" ID="ID_1956859186" MODIFIED="1510152283039" TEXT="The Release Day">
-<node CREATED="1510129613850" ID="ID_1495138776" MODIFIED="1510152288542" TEXT="The morning">
-<node CREATED="1510152290384" ID="ID_370855900" MODIFIED="1510152296719" TEXT="Everybody up at 6am">
-<node CREATED="1510152297137" ID="ID_1293604725" MODIFIED="1510152317512" TEXT="The deployment activity causes a downtime, and it&apos;s a risky task"/>
-<node CREATED="1510152317744" ID="ID_1234528175" MODIFIED="1510152344885" TEXT="we must reduce the risk, working in a relatively idle timeframe"/>
+<node CREATED="1510152235611" ID="ID_1862512856" MODIFIED="1510307287553" TEXT="We plan the deployment, freezing any other activities">
+<node CREATED="1510294046440" ID="ID_230654122" MODIFIED="1510294140134" TEXT="&quot;Of course - Anna says - we should freeze any other activities, as a deployment is such a delicate and risky activity&quot;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1510129154930" ID="ID_1824668819" MODIFIED="1510152366974" TEXT="Of course we will have a downtime during the deployment anyway">
-<node CREATED="1510129239044" ID="ID_1729486279" MODIFIED="1510129243799" TEXT="pagina di maintenance"/>
-<node CREATED="1510152368919" ID="ID_672091590" MODIFIED="1510152376351" TEXT="We need a maintenance page"/>
+</node>
+</node>
+</node>
+<node CREATED="1510129425943" ID="ID_1956859186" MODIFIED="1510302829226" TEXT="The Release Day">
+<node CREATED="1510129613850" ID="ID_1495138776" MODIFIED="1510302829946" TEXT="The morning">
+<node CREATED="1510152290384" ID="ID_370855900" MODIFIED="1510302837179" TEXT="Everybody up at 6am">
+<node CREATED="1510152297137" ID="ID_1293604725" MODIFIED="1510294217005" TEXT="The deployment activity causes a downtime, and it&apos;s a risky task">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510152317744" ID="ID_1234528175" MODIFIED="1510294226905" TEXT="so we must reduce the risk, working in a relatively idle timeframe">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1510294230390" ID="ID_376788830" MODIFIED="1510294266228" TEXT="That&apos;s why the deployment has been scheduled at 6 oclock in the morning">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1510129154930" ID="ID_1824668819" MODIFIED="1510302837183" TEXT="Of course we will have a downtime during the deployment anyway">
+<node CREATED="1510152368919" ID="ID_672091590" MODIFIED="1510302837189" TEXT="We need a maintenance page">
+<node CREATED="1510222421833" ID="ID_1503644608" MODIFIED="1510222486758" TEXT="do you remember when ISPIN sent us chocolate pralines, as they forgot to setup the maintenance page and they caused issues to our cardholders during the deployment?"/>
+<node CREATED="1510222487329" ID="ID_1365326065" MODIFIED="1510222510724" TEXT="This happened, and may happen again, since the deployment is a manual operation"/>
+</node>
 <node CREATED="1510152376772" ID="ID_1492307259" MODIFIED="1510152405709" TEXT="everyone cross their fingers hoping the deployment will be fast and seamless, with no surprises"/>
 </node>
-<node CREATED="1510129143327" ID="ID_896450582" MODIFIED="1510152511370" TEXT="It&apos;s a manual performed process, so it may fail">
-<node CREATED="1510129444448" ID="ID_1452385669" MODIFIED="1510152523189" TEXT="Infact, ISPIN forgot to put the maintenance page">
-<node CREATED="1510129482648" ID="ID_723321855" MODIFIED="1510152447097" TEXT="It&apos;s because it&apos;s a human performed process"/>
+<node CREATED="1510129143327" ID="ID_896450582" MODIFIED="1510302837192" TEXT="It&apos;s a manual performed process, so it may fail">
 <node CREATED="1510152447731" ID="ID_243084690" MODIFIED="1510152476916" TEXT="Some customers may have had a bad user experience. We just tolerate this as an inevitable consequence"/>
+<node CREATED="1510129521815" ID="ID_610174941" MODIFIED="1510222555667" TEXT="Oops, the deployment actually fails."/>
 </node>
-<node CREATED="1510129521815" ID="ID_610174941" MODIFIED="1510152534641" TEXT="Not only: the deployment fails"/>
+<node CREATED="1510222565213" ID="ID_1092900347" MODIFIED="1510222637633" TEXT="Not a dramatic situation, anyway. In this case, we just notice than one server on 2 is not properly responding. We could go on and fix this later, but it&apos;s better to rollback."/>
+<node CREATED="1510302967308" ID="ID_778345285" MODIFIED="1510302975961" TEXT="Pressione sulla tempistica"/>
+<node CREATED="1510128940264" ID="ID_1654493176" MODIFIED="1510302837194" TEXT="This happens because each server is a snowflake">
+<node CREATED="1510128945321" ID="ID_147193381" MODIFIED="1510222673473" TEXT="So it may happen that one server behaves differently than another one"/>
+<node CREATED="1510222674418" ID="ID_187759691" MODIFIED="1510222684525" TEXT="We must investigate on the specific server"/>
+<node CREATED="1510222685517" ID="ID_440783681" MODIFIED="1510222715742" TEXT="And for this, as usual, we must rely on a specific person, the Personal Janitor of that server."/>
 </node>
-<node CREATED="1510128940264" ID="ID_1654493176" MODIFIED="1510152559678" TEXT="server snow flakes">
-<node CREATED="1510128945321" ID="ID_147193381" MODIFIED="1510128955374" TEXT="nodi che si comportano diversamente"/>
-<node CREATED="1510128967219" ID="ID_1335414522" MODIFIED="1510128973264" TEXT="persona dedicata"/>
-</node>
-<node CREATED="1510129012963" ID="ID_82103363" MODIFIED="1510129635616" TEXT="rollback can fail">
+<node CREATED="1510129012963" ID="ID_82103363" MODIFIED="1510302837195" TEXT="rollback can fail">
 <node CREATED="1510129580758" ID="ID_1001056424" MODIFIED="1510129600508" TEXT="rollback is another deployment"/>
 <node CREATED="1510152573030" ID="ID_1291394249" MODIFIED="1510152592448" TEXT="we are lucky, and the rollback goes smooth"/>
 </node>
 </node>
-<node CREATED="1510129622640" ID="ID_1224428189" MODIFIED="1510152604133" TEXT="The afternoon">
-<node CREATED="1510152606230" ID="ID_840355625" MODIFIED="1510152612615" TEXT="A debriefing">
-<node CREATED="1510129020629" ID="ID_1684919550" MODIFIED="1510129610684" TEXT="Works on my machine">
-<node CREATED="1510129039767" ID="ID_1748712225" MODIFIED="1510152804437" TEXT="environment differenti">
-<node CREATED="1510152806873" ID="ID_1630053498" MODIFIED="1510152811457" TEXT="why?">
-<node CREATED="1510128940264" ID="ID_1090881643" MODIFIED="1510152825105" TEXT="Because servers are snowflakes">
+<node CREATED="1510129622640" ID="ID_1224428189" MODIFIED="1510303027669" TEXT="The afternoon">
+<node CREATED="1510152606230" ID="ID_840355625" MODIFIED="1510303029345" TEXT="A debriefing">
+<node CREATED="1510129020629" ID="ID_1684919550" MODIFIED="1510303030377" TEXT="Works on my machine">
+<node CREATED="1510129039767" ID="ID_1748712225" MODIFIED="1510303033130" TEXT="environment differenti">
+<node CREATED="1510152806873" ID="ID_1630053498" MODIFIED="1510303033142" TEXT="why?">
+<node CREATED="1510128940264" ID="ID_1090881643" MODIFIED="1510303033145" TEXT="Because servers are snowflakes">
 <node CREATED="1510152825776" ID="ID_563382158" MODIFIED="1510152839440" TEXT="SysAdmin and Developers change its configuration"/>
 <node CREATED="1510152841989" ID="ID_1871965102" MODIFIED="1510152846544" TEXT="over and over and over"/>
 <node CREATED="1510152881494" ID="ID_1865578152" MODIFIED="1510152899239" TEXT="No one writes down the exact list of manual operations operated on a server"/>
@@ -272,67 +322,87 @@
 </node>
 </node>
 </node>
-<node CREATED="1510152622157" ID="ID_392356012" MODIFIED="1510152631030" TEXT="The future">
-<node CREATED="1510129307070" ID="ID_1316850647" MODIFIED="1510152664829" TEXT="Next November 24th it&apos;s Black Friday">
-<node CREATED="1510152667213" ID="ID_1024829979" MODIFIED="1510152675554" TEXT="We would need 3 new servers">
+<node CREATED="1510152622157" ID="ID_392356012" MODIFIED="1510303033147" TEXT="The future">
+<node CREATED="1510129307070" ID="ID_1316850647" MODIFIED="1510303033149" TEXT="Next November 24th it&apos;s Black Friday">
+<node CREATED="1510152667213" ID="ID_1024829979" MODIFIED="1510303033151" TEXT="We would need 3 new servers">
 <node CREATED="1510152676006" ID="ID_228715770" MODIFIED="1510152688916" TEXT="only for 2 days, then we might even discard them"/>
-<node CREATED="1510152693995" ID="ID_329151540" MODIFIED="1510152720988" TEXT="Not possible. Creating servers is">
+<node CREATED="1510152693995" ID="ID_329151540" MODIFIED="1510303033152" TEXT="Not possible. Creating servers is">
 <node CREATED="1510152721300" ID="ID_658860344" MODIFIED="1510152727643" TEXT="slow because it&apos;s manual"/>
 <node CREATED="1510152728050" ID="ID_536025680" MODIFIED="1510152731003" TEXT="expensive"/>
 </node>
 </node>
 <node CREATED="1510151630076" ID="ID_221563258" MODIFIED="1510152740908" TEXT="So the System does not scale"/>
-<node CREATED="1510128956898" ID="ID_1318971485" MODIFIED="1510152749512" TEXT="Even the Ops team does not scale">
+<node CREATED="1510128956898" ID="ID_1318971485" MODIFIED="1510303033155" TEXT="Even the Ops team does not scale">
 <node CREATED="1510152749513" ID="ID_1082859995" MODIFIED="1510152788890" TEXT="We can&apos;t just scale from 100 to 1000 servers without correspondingly increment the number of technical people"/>
 </node>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1510128921127" ID="ID_696431430" MODIFIED="1510151929156" TEXT="Oh come sarebbe bello se">
-<node CREATED="1510129733346" ID="ID_283795728" MODIFIED="1510129736549" TEXT="immutability">
-<node CREATED="1510129736550" ID="ID_598722818" MODIFIED="1510151946482" TEXT="if we had a sort of original model">
-<node CREATED="1510129758305" ID="ID_879063173" MODIFIED="1510153116072" TEXT="we could focus on the original model and concentrate all our efforts there"/>
-<node CREATED="1510129973534" ID="ID_1169287106" MODIFIED="1510153153152" TEXT="No snowflakes">
+<node CREATED="1510128921127" ID="ID_696431430" MODIFIED="1510302825567" TEXT="I have a dream">
+<node CREATED="1510129733346" ID="ID_283795728" MODIFIED="1510303224560" TEXT="Immutability + automation">
+<node CREATED="1510222999179" ID="ID_83674651" MODIFIED="1510303224562" TEXT="Immutability">
+<node CREATED="1510129736550" ID="ID_598722818" MODIFIED="1510303224566" TEXT="if we had a sort of original model">
+<node CREATED="1510223006941" ID="ID_576157305" MODIFIED="1510223037066" TEXT="we could print out servers with our application inside them from the the Original Model"/>
+<node CREATED="1510223059702" ID="ID_1721792540" MODIFIED="1510303224568" TEXT="They would me immutable, so no one could manually mess up their configuration">
+<node CREATED="1510129973534" ID="ID_1169287106" MODIFIED="1510303224569" TEXT="No snowflakes">
 <node CREATED="1510151955491" ID="ID_255637087" MODIFIED="1510153165223" TEXT="each server is an exact copy of the model, no surprises"/>
 </node>
 </node>
-<node CREATED="1510151974494" ID="ID_333366124" MODIFIED="1510152000016" TEXT="a very quick way to print copies of the original model">
-<node CREATED="1510152000845" ID="ID_792486796" MODIFIED="1510152011832" TEXT="we could print serves on demand, when needed"/>
-<node CREATED="1510152012257" ID="ID_1987131450" MODIFIED="1510152065222" TEXT="no dependency from personal knowledge"/>
-<node CREATED="1510152065688" ID="ID_1216345189" MODIFIED="1510152104517" TEXT="ops could be interchangeable"/>
+<node CREATED="1510129758305" ID="ID_879063173" MODIFIED="1510303224572" TEXT="we could focus on the original model">
+<node CREATED="1510223116260" ID="ID_967518333" MODIFIED="1510223163258" TEXT="we could concentrate all out effort on the Original Model"/>
+<node CREATED="1510223368735" ID="ID_1818614558" MODIFIED="1510223408051" TEXT="without repeating over and over the same configuration over and over for each server"/>
+<node CREATED="1510223408052" ID="ID_1763420455" MODIFIED="1510223440186" TEXT="with the risk to do the configuration slightly differently, and end up with different servers"/>
+<node CREATED="1510223167532" ID="ID_25003927" MODIFIED="1510223456786" TEXT="On the contrary, configuration would be done once, and at the highest quality"/>
+<node CREATED="1510223191348" ID="ID_431465189" MODIFIED="1510223477210" TEXT="We could do the same for security, for networking, for application configuration "/>
 </node>
-<node CREATED="1510129904024" ID="ID_749018440" MODIFIED="1510129914314" TEXT="blue/green deployment">
+</node>
+</node>
+<node CREATED="1510223730817" ID="ID_428298197" MODIFIED="1510303224577" TEXT="automation">
+<node CREATED="1510223738972" ID="ID_33761724" MODIFIED="1510328241162" TEXT="if the process of printing servers was really fast and cheap..."/>
+<node CREATED="1510223790727" ID="ID_1669860691" MODIFIED="1510303224581" TEXT="benefits">
+<node CREATED="1510152000845" ID="ID_792486796" MODIFIED="1510152011832" TEXT="we could print serves on demand, when needed"/>
+<node CREATED="1510152012257" ID="ID_1987131450" MODIFIED="1510223810544" TEXT="we would have no dependency from personal knowledge"/>
+<node CREATED="1510152065688" ID="ID_1216345189" MODIFIED="1510152104517" TEXT="ops could be interchangeable"/>
+<node CREATED="1510129904024" ID="ID_749018440" MODIFIED="1510303224583" TEXT="we could preform blue/green deployments">
 <node CREATED="1510129914316" ID="ID_310083042" MODIFIED="1510129920683" TEXT="during working hour"/>
 <node CREATED="1510129993087" ID="ID_1984886502" MODIFIED="1510154952492" TEXT="no downtime"/>
 </node>
-<node CREATED="1510154955242" ID="ID_1927897446" MODIFIED="1510154965665" TEXT="the deployment becomes deterministic"/>
-<node CREATED="1510154967274" ID="ID_713198316" MODIFIED="1510154980034" TEXT="Rollbacks as well would be deterministic"/>
-<node CREATED="1510130028540" ID="ID_1554990171" MODIFIED="1510130039394" TEXT="Works the same everywhere">
+</node>
+</node>
+<node CREATED="1510223924069" ID="ID_1489598200" MODIFIED="1510303224587" TEXT="having immutability and automation together">
+<node CREATED="1510130028540" ID="ID_1554990171" MODIFIED="1510328420196" TEXT="Works the same everywhere">
 <node CREATED="1510130041382" ID="ID_776241828" MODIFIED="1510130057678" TEXT="sviluppatore si stampa i suoi server produttivi per provare il locale"/>
 <node CREATED="1510154985242" ID="ID_1792750994" MODIFIED="1510155024219" TEXT="Developers may have their servers, printing them from the original model, and use them during development"/>
 <node CREATED="1510155024844" ID="ID_215175530" MODIFIED="1510155044562" TEXT="All the environments would be identical"/>
 </node>
-<node CREATED="1510130068135" ID="ID_416356133" MODIFIED="1510130074320" TEXT="Black Friday">
+<node CREATED="1510154955242" ID="ID_1927897446" MODIFIED="1510223921808" TEXT="the deployment becomes deterministic"/>
+<node CREATED="1510330832012" ID="ID_1621618181" MODIFIED="1510330869965" TEXT="and we don&apos;t need to deploy at 6am"/>
+<node CREATED="1510154967274" ID="ID_713198316" MODIFIED="1510223921806" TEXT="Rollbacks as well would be deterministic"/>
+<node CREATED="1510130068135" ID="ID_416356133" MODIFIED="1510303224596" TEXT="Black Friday">
 <node CREATED="1510155054142" ID="ID_509885274" MODIFIED="1510155067253" TEXT="We could print some servers on demand"/>
-<node CREATED="1510155069282" ID="ID_135749388" MODIFIED="1510155094322" TEXT="We might even print disposable servers, to dynamical adapt to the traffic, in real time">
+<node CREATED="1510155069282" ID="ID_135749388" MODIFIED="1510303224596" TEXT="We might even print disposable servers, to dynamical adapt to the traffic, in real time">
 <node CREATED="1510155098126" ID="ID_368671513" MODIFIED="1510155114247" TEXT="Like in a real elastic cloud"/>
 </node>
-<node CREATED="1510155121580" ID="ID_1973165614" MODIFIED="1510155161787" TEXT="Focusing only on the original model, and on the automation, we could scale the number of servers without increasing the number of employees in the Ops team">
+<node CREATED="1510155121580" ID="ID_1973165614" MODIFIED="1510303224597" TEXT="Focusing only on the original model, and on the automation, we could scale the number of servers without increasing the number of employees in the Ops team">
 <node CREATED="1510155162511" ID="ID_461099738" MODIFIED="1510155168046" TEXT="Pets vs Cattles"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1510128926222" FOLDED="true" ID="ID_1525787211" MODIFIED="1510151653544" TEXT="Ma esiste!">
-<node CREATED="1510130155784" ID="ID_685651097" MODIFIED="1510130157254" TEXT="Docker">
-<node CREATED="1510130170644" ID="ID_1263004126" MODIFIED="1510130193556" TEXT="fa girare un programma lasciandogli credere di essere etcetc"/>
 </node>
-<node CREATED="1510130167229" ID="ID_452951532" MODIFIED="1510130279729" TEXT="DevOps / DevSecOps">
-<node CREATED="1510130197284" ID="ID_1788248474" MODIFIED="1510130205039" TEXT="focus sulla matrice">
-<node CREATED="1510130205041" ID="ID_1273589779" MODIFIED="1510130244642" TEXT="matrice immutabile = ">
-<node CREATED="1510130209507" ID="ID_658786921" MODIFIED="1510130219360" TEXT="+">
-<node CREATED="1510130219362" ID="ID_388791374" MODIFIED="1510130225946" TEXT="server configuration ">
+<node CREATED="1510128926222" ID="ID_1525787211" MODIFIED="1510304250487" TEXT="Meet Docker">
+<node CREATED="1510130155784" ID="ID_685651097" MODIFIED="1510304252954" TEXT="Docker">
+<node CREATED="1510330333003" ID="ID_960942134" MODIFIED="1510330335909" TEXT="amazon, google"/>
+<node CREATED="1510292622668" ID="ID_607390377" MODIFIED="1510292657407" TEXT="it runs a program letting it believe it is the only one running in the server"/>
+<node CREATED="1510292657848" ID="ID_178739957" MODIFIED="1510292695265" TEXT="It isolates programs, segregating them in cages"/>
+<node CREATED="1510292697981" ID="ID_1137978936" MODIFIED="1510292755191" TEXT="and it allows to programmatically configure that cages so they perfectly resemble a fully fledge and configured server"/>
+</node>
+<node CREATED="1510130167229" ID="ID_452951532" MODIFIED="1510304252956" TEXT="DevOps / DevSecOps">
+<node CREATED="1510130197284" ID="ID_1788248474" MODIFIED="1510304252959" TEXT="focus sulla matrice">
+<node CREATED="1510130205041" ID="ID_1273589779" MODIFIED="1510304252961" TEXT="matrice immutabile = ">
+<node CREATED="1510130209507" ID="ID_658786921" MODIFIED="1510304252964" TEXT="+">
+<node CREATED="1510130219362" ID="ID_388791374" MODIFIED="1510304252965" TEXT="server configuration ">
 <node CREATED="1510130236333" ID="ID_1678859881" MODIFIED="1510130238896" TEXT="security"/>
 </node>
 <node CREATED="1510130226288" ID="ID_1156852088" MODIFIED="1510130232273" TEXT="application"/>
@@ -341,6 +411,12 @@
 <node CREATED="1510130245507" ID="ID_1066465519" MODIFIED="1510130253595" TEXT="per cui Dev + Ops + Security"/>
 </node>
 </node>
+</node>
+<node CREATED="1510302228026" ID="ID_597607635" MODIFIED="1510302235480" TEXT="Dialogo">
+<node CREATED="1510302235791" ID="ID_1653522638" MODIFIED="1510302240240" TEXT="Anna">
+<node CREATED="1510302247249" ID="ID_1421253403" MODIFIED="1510302247249" TEXT=""/>
+</node>
+<node CREATED="1510302240849" ID="ID_1982733353" MODIFIED="1510302245688" TEXT="Sherlock"/>
 </node>
 </node>
 </node>
