@@ -78,7 +78,7 @@
 2# Uhm, that’s not so easy… The problem is servers are a bit hard to get.
 2# You have to create them, to install the operating system, to make all the configurations…
 1# … and you have no reference, because of the configuration shift…
-2# Yes! Exactly! You have to create them from scratch, more or less copying from our snowflakes servers.
+2# Yes! Correct! You have to create them from scratch, more or less copying from our snowflakes servers.
 1# I got it. How much time for a server?
 2# Days... may be weeks… In addiction, you need to test them, right after the creation.
 1# So, not only is it a slow pròcess. It must also be expensive.
@@ -124,7 +124,7 @@
 2# Think of Anna. You know that Anna is the Janitor of SNTP101: that sever is her personal pet.
 2# If we could print 20 copies of the Master Copy, what would Anna’s task be?
 1# I guess…. Working on the Master Copy, probably?
-2# Exactly! If we had Immutability, it would be no sense to work on multiple identical copies. You would rather focus on their Master Copy.
+2# Correct! If we had Immutability, it would be no sense to work on multiple identical copies. You would rather focus on their Master Copy.
 2# Do you guess what this means? We would all focus on the only source of truth for a server…
 1# Sure, without spending precious time replicating the configuration over and over, on each server.
 2# Yes. We would work only once.
