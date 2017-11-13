@@ -1,46 +1,46 @@
 1# Ciao guys.
 2# Hi Brent
 1# So, next release of Adunicorn, next Monday, ok?
-1# Everybody is in? Devs?
-2# Ok
+1# Is everybody in? Devs?
+2# Yes
 1# Network?
 2# As well
 1# Great. Ops?
-2# There we have an issue. Anna, Ops of server SN101, is on vacation next Monday, she’ll be back the next week.
+2# There we have an issue. Anna, the Ops of server SN101, is on vacation next Monday, she’ll be back the next week.
 1# Ok. Can we replace her with someone else?
 2# I'm not sure. It was always Anna to work on that server. No one else knows the server better than her. I suggest to wait her return.
 1# Ok, got it. Let's postpone the deployment. Is it ok for everyone next Friday? 
 2# Ok.
 1# Why do we have such a coupling between people and servers?
-2# We use templates to create servers, so they are identical. But since that moment, we do configuration by hand. Maybe we perform some tests with devs and we go back and forth with settings, and so on…. So, those two identical servers diverge with time. We call it “Configuration shift”. 
-1# We start with identical servers, we end up with unique servers. 
+2# We use templates to create servers, so they are identical. But since that moment, we do configuration by hand. We often perform some tests with Devs and we go back and forth with settings, and so on…. So, those two identical servers diverge with time. We call it “Configuration shift”. 
+1# So we start with identical servers, we end up with unique servers. 
 2# Yes, unique like snowflakes. So, we really need Anna.
 1# Ok, got it. See you next Friday, 6 o’clock in the morning.
 2# Why so early?
-1# I know, it sucks to wake up early, but during the deployment we have some downtimes. In the morning we have low traffic, in the afternoon the downtime would be more painful.
+1# I know, it sucks to wake up early, but during the deployment we have some downtimes. In the morning we have low traffic, in the contrary in the afternoon the downtime would be more painful.
 2# Ok, better safe than sorry.
 1# Ok, guys, see you next Friday.
 1# &nbsp;
-1# <h1>Friday Morning</h1>
+1# <h1>Monday Morning</h1>
 1#  
 1# Hi everyone, ‘morning.
 2# Hi Brent. Sorry, I'm very busy... I'm in the middle of the deployment.
 1# Good. How long the downtime will last?
-2# Few minutes still, I hope. It's all manual. I must be careful, the deployment may even fail. I'm struggling with the node SNTP123
+2# Few minutes still, I hope. It's all manual. I must be careful, the deployment may even fail. We ran into troubles with node SN123
 1# Anna’s server?
-2# No, another one. We have 2 db nodes, and one is really slow, can’t figure out why. 
-2# Can’t understand why… Damn..
-1# Ok, calm down. Can I remove the maintenance page?
-2# No, not yet, the system is not stable. There must be a bug..
+2# No, another one. We have 2 db nodes, and one is really slow, can’t figure out why. Can’t understand...  Damn..
+1# Ok, calm down. Can we live with it and remove the maintenance page?
+2# No, no, not yet, the system is not stable. There must be a bug..
 1# Can you fix it, Albert?
 2# No, please, not in the middle of a downtime...
-1# Uhm… Can we rollback to the previous version?
-2# We can and we should. Keep in mind that the rollback is a deployment anyway. And may fail as well.
+1# Uhm… Maybe then rollback to the previous version? Can we?
+2# We can and we should. Of course, the rollback may fail as well. After all, it's just another deployment.
 1# My gosh! Do it and fingers crossed…
-2# Ok, it worked. Now we can remove the maintenance page.
+2# Ok, it worked! Now we can remove the maintenance page.
 1# Nice. Let's meet in the afternoon, and have a briefing. I’d love to discuss what didn’t work, and why. I really wish we can improve this pròcess.
 2# Yes, nice idea. Actually I've got a proposal.
-1# <h1>Friday Afternoon</h1>
+1# Looking forward to hearing it.
+1# <h1>Monday Afternoon</h1>
 2# Hi Brent. I just met Andy, the lead developer. He told me the system was ok on his machine.
 1# So, why wasn’t it working in production?
 2# Because Andy ran the system on the Dev environment, on servers different than production
@@ -54,11 +54,11 @@
 1# Why this face, Albert, are you worried?
 2# Yes, a bit . We will need at least 2 more db servers. Maybe 3.
 1# No problem, I will ask for 3 more servers.
-2# Uhm, that’s not so easy… Servers are a bit hard to get.
-2# You have to create them, to install the operating system, to configure them…
-2# You create them from scratch, copying from other snowflakes servers.
+2# Uhm, that’s not so easy… Servers are a hard to get.
+2# We have to create them, to install the operating system, to configure them…
+2# We create them from scratch, copying from other snowflakes servers.
 1# How much time for a server?
-2# Days... may be weeks… Then, you need to test them...
+2# Days... may be weeks… Then, we need to test them...
 1# So, not only slow, it's also expensive.
 1# Ask Anna to build those 3 servers anyway.
 2# Anna is really too busy. Each server consumes human time. Wanna double your platform? Double your staff...
@@ -75,52 +75,53 @@
 1# Not so useful.
 2# It is, indeed. Suppose you obtained that server printing it out from a Master Copy.
 1# Printing it out from a Master Copy?
-2# Think of the Master Copy of the 1 Franc coin.
-2# You use it to print other coins:, you print millions Franc coins from it, identical coins.
-2# Take SN101, take its Master Copy, and print SN101 from it. An immutable copy of it.
+2# Think of the Master Copy of the 1 Franc coin, the one used print other coins. You print millions indentical Franc coins from it.
+2# Think of SN101, take its Master Copy, and print SN101 from it. An immutable copy of it.
 1# What's benefit?
 2# Oh, we could have a lot of benefits...
-2# Tell me, Brent: would you like to have two copies of SN101?
-1# Both printed out from the same master copy?
+2# Tell me, Brent: would you like to have 3 copies of SN101?
+1# All of them printed out from the same master copy?
 1# Ok, they would be identical, then...
 1# Uhm.. No configuration shift...
-2# But there's more. Think of Anna. If we could print 20 copies of SN101, what would be Anna’s job?
+2# There's even more. Think of Anna. If we could print 20 copies of SN101, what would Anna’s job be?
 1# It would be useless for her to work on 20 identical copies...
 2# Correct! She would rather focus on the Master Copy.
 2# If we all could focus on the single source of truth for a server...
 1# ...without spending precious time replicating the configuration over and over, on each server.
 2# ...we would work only once.
-2# and we could concentrate all our effort setting our quality standards to the highest limit.
+2# We could concentrate all the effort setting our quality standards to the highest limit.
 2# Do once, at your best.
 1# What’s inside this Master Copy?
 2# Everything you need to run our application. Network, configuration, the application itself…
 1# Interesting. No differences between server... So SN101 is no more one-of-a-kind.
 2# Yes. Every configuration would be as simple as a text file, stored in the Master Copy, any System Engineer who worked on the Master Copy can manage all of its copies.
-1# Wait wait, so, any of them, so no dependency between a single system engineer and a server?
-2# And running twice the number of some identical, immutable copies it's easier then running snowflakes.
+1# Wait wait, any of them, you said. You mean, less dependency between a single Ops engineer and a server?
+2# Yes. Also, can you understand how running identical, immutable copies is easier than running snowflakes? I mean, we could double the number of those copies  without doubling the staff...
 1# Still, I feel confused. How a deployment work with those immutable servers?
 2# You prepare a server, you invest your time to write and test its configuration. 
 2# Then you print one or more instances. And you run them.
-1# But they are immutable. Cannot work, sorry. We do need mutability, sooner or later. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change the servers...
-2# You don’t need to change the servers! Change the Master Copy. Then print the new servers, with the new version. And let them run.
+1# But they are immutable. Cannot work, sorry. We need mutability. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change the servers...
+2# You don’t need to change the servers! Change the Master Copy. Then print the new servers, with the new version. And run them.
 1# Uhm. What should I do with the old servers?
 2# Dispose of them. It’s called Blue/Green Deployment. Never change the configuration of a server in production: rather, put new versions side by side to the old one, and gracefully move the customers from the old version to the new one.
 1# Gracefully means without any downtime?
-1# But today’s problem wasn’t caused by downtime, but by some bugs Andy didn't see in HIS environment.
+2# No downtime, if you want.
+1# No maintenance pages...
+1# But today’s problem wasn’t downtime. It was some bugs Andy hasn't caught in HIS environment.
 2# You said it.
 1# What do you mean?
 2# "HIS environment". Who prepared Andy's servers?
-1# Some System Engineers did... then he changed some configuration...
+1# Some Ops did... then he changed some configuration...
 1# Oh, I understand... If he printed out his servers from a Master Copy.
 2# They would be identical to the productive one.
-1# And immutable! Neat! So, developers could have been developing on pefect copies of production from the very first day...
+1# And immutable! Neat! So, developers could have used perfect copies of production from the very first day...
 2# Yes.
 1# What if Andy needs to modify the server for his needs?
-2# He could modify the Master Copy, together with Anna. So, any modification would be tracked there, and propagated to any replica copy.
+2# He can modify the Master Copy, together with Anna. So, any modification would be tracked there, and propagated to any replica copy.
 1# What about rollbacks?
 2# They are just deployment. You deploy the servers with the old versions.
 2# No one changed a single line in them.
-1# You mean, if they used to work in the past, they must be working as before if put in production again. 
+1# If they used to work in the past, they must be working as before if put in production again. 
 1# Ok, so Immutability is the solution.
 2# Immutability, plus Automation.
 1# Yes, right, you told me about Automation. Tell me more about it.
@@ -148,7 +149,8 @@
 2# Think of farmers. They easily have thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They say "Let's buy 20% more sheep", or "move half the sheep from here to there". If 3 sheep dies, they replace them, it’s a number. They are all identical.
 2# Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
 1# Like in Amazon, or Google?
-2# Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. We could do the same. We could use special software for orchestrating our cattle of servers.
+2# Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. They can treat servers as sheep, because they use immutability, so they give the servers no opportunities to get any special.
+We could do the same. We could use special software for orchestrating our cattle of servers.
 1# &nbsp;
 1# <h1>Docker</h2>
 1# What was the dashboard you showed me before, was it a prototype?
