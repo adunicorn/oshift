@@ -19,6 +19,14 @@ print """
 with open('dialog.md') as f:
    for line in f:
        parts = line.split("#")
+       if parts[0] == "0":
+          print """
+  <tr>
+    <td class="left" colspan="2">
+      ===============
+    </td>
+  </tr>
+"""
        if parts[0] == "1":
            print """
   <tr>

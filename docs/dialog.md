@@ -1,6 +1,6 @@
 1# Ciao guys.
 2# Hi Brent
-1# So, next release of Adunicorn, next Monday, ok?
+1# So, next release of Adunicorn, on Monday, ok?
 1# Is everybody in? Devs?
 2# Yes
 1# Network?
@@ -11,6 +11,7 @@
 2# I'm not sure. It was always Anna to work on that server. No one else knows the server better than her. I suggest to wait her return.
 1# Ok, got it. Let's postpone the deployment. Is it ok for everyone next Friday? 
 2# Ok.
+0# 
 1# Why do we have such a coupling between people and servers?
 2# We use templates to create servers, so they are identical. But since that moment, we do configuration by hand. We often perform some tests with Devs and we go back and forth with settings, and so on…. So, those two identical servers diverge with time. We call it “Configuration shift”. 
 1# So we start with identical servers, we end up with unique servers. 
@@ -20,6 +21,7 @@
 1# I know, it sucks to wake up early, but during the deployment we have some downtimes. In the morning we have low traffic, in the contrary in the afternoon the downtime would be more painful.
 2# Ok, better safe than sorry.
 1# Ok, guys, see you next Friday.
+0# 
 1# &nbsp;
 1# <h1>Monday Morning</h1>
 1#  
@@ -40,6 +42,7 @@
 1# Nice. Let's meet in the afternoon, and have a briefing. I’d love to discuss what didn’t work, and why. I really wish we can improve this pròcess.
 2# Yes, nice idea. Actually I've got a proposal.
 1# Looking forward to hearing it.
+0# 
 1# <h1>Monday Afternoon</h1>
 2# Hi Brent. I just met Andy, the lead developer. He told me the system was ok on his machine.
 1# So, why wasn’t it working in production?
@@ -66,6 +69,7 @@
 2# Well, you could escape if...
 1# If?
 2# I told you I had a proposal.
+0# 
 1# <h1>What if?<h1>
 1# A proposal… Good, I’m ready. Tell me everything
 2# Ok, Brent. Let's do a game.
@@ -79,6 +83,7 @@
 2# Think of SN101, take its Master Copy, and print SN101 from it. An immutable copy of it.
 1# What's benefit?
 2# Oh, we could have a lot of benefits...
+0# 
 2# Tell me, Brent: would you like to have 3 copies of SN101?
 1# All of them printed out from the same master copy?
 1# Ok, they would be identical, then...
@@ -91,6 +96,7 @@
 2# ...we would work only once.
 2# We could concentrate all the effort setting our quality standards to the highest limit.
 2# Do once, at your best.
+0# 
 1# What’s inside this Master Copy?
 2# Everything you need to run our application. Network, configuration, the application itself…
 1# Interesting. No differences between server... So SN101 is no more one-of-a-kind.
@@ -100,6 +106,7 @@
 1# Still, I feel confused. How a deployment work with those immutable servers?
 2# You prepare a server, you invest your time to write and test its configuration. 
 2# Then you print one or more instances. And you run them.
+0# 
 1# But they are immutable. Cannot work, sorry. We need mutability. In 2 months we will be releasing a new version of Adunicorn. How can I deploy if I cannot change the servers...
 2# You don’t need to change the servers! Change the Master Copy. Then print the new servers, with the new version. And run them.
 1# Uhm. What should I do with the old servers?
@@ -107,6 +114,7 @@
 1# Gracefully means without any downtime?
 2# No downtime, if you want.
 1# No maintenance pages...
+0# 
 1# But today’s problem wasn’t downtime. It was some bugs Andy hasn't caught in HIS environment.
 2# You said it.
 1# What do you mean?
@@ -123,6 +131,7 @@
 2# No one changed a single line in them.
 1# If they used to work in the past, they must be working as before if put in production again. 
 1# Ok, so Immutability is the solution.
+0# 
 2# Immutability, plus Automation.
 1# Yes, right, you told me about Automation. Tell me more about it.
 2# Automation is the ability to print servers quickly. If can automate everything. You could get a new server  very very quickly.
@@ -138,6 +147,7 @@
 2# Actually you could do much more. Suppose to get a little program that creates new servers when the traffic increases, and discard of them when our customers are idle..
 1# We could have a dynamic number of servers, depending on the number of requests.
 2# Yes. We could save money, and switch off half our infrastructure during the night. Or respond to unpredictable spikes.
+0# 
 1# How could Ops manage such a network, with so many moving parts?
 2# They must manage cattle rather than pets.
 1# What do you mean?
@@ -146,11 +156,13 @@
 2# And they have owners too. Take Anna, for example. She knows everything about her pet: when it's born, its health, its little secrets.. She’s even jealous, and let no one take care of SN101.
 1# I know, we even delayed a release because Anna was in vacation.
 1# I remember. And what's the other  approach to servers?
+0# 
 2# Think of farmers. They easily have thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They say "Let's buy 20% more sheep", or "move half the sheep from here to there". If 3 sheep dies, they replace them, it’s a number. They are all identical.
 2# Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
 1# Like in Amazon, or Google?
 2# Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. They can treat servers as sheep, because they use immutability, so they give the servers no opportunities to get any special.
 2# We could do the same. We could use special software for orchestrating our cattle of servers.
+0# 
 1# &nbsp;
 1# <h1>Docker</h2>
 1# What was the dashboard you showed me before, was it a prototype?
@@ -169,6 +181,7 @@
 2# Of the server and the program running inside it!
 1# Ok, both: the server and the program. Makes sense.
 1# Who is supposed to work on this Master Copy, then? The Ops, or the Developer?
+0# 
 2# Brent, you nailed it. This is probably the most important topic. Both.
 1# Both? Ops first, Dev later?
 2# No, both, together, since the beginning. It must be a collaborative endeavour. Devs and Ops, together.
