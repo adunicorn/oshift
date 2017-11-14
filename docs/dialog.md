@@ -150,7 +150,7 @@
 2# Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
 1# Like in Amazon, or Google?
 2# Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. They can treat servers as sheep, because they use immutability, so they give the servers no opportunities to get any special.
-We could do the same. We could use special software for orchestrating our cattle of servers.
+2# We could do the same. We could use special software for orchestrating our cattle of servers.
 1# &nbsp;
 1# <h1>Docker</h2>
 1# What was the dashboard you showed me before, was it a prototype?
