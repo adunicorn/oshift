@@ -154,41 +154,41 @@
 2# I mean, we treat our servers as pets. We give them names. 
 1# È vero. Abbiamo SN101, c'è -- come si chiama? -- SNX10
 2# And they have owners too. Take Anna, for example. She knows everything about her pet: when it's born, its health, its little secrets.. She’s even jealous, and let no one take care of SN101.
-1# I know, we even delayed a release because Anna was in vacation.
-1# I remember. And what's the other  approach to servers?
+1# Lo so. Abbiamo perfino rimandato un rilascio perché Anna era in vacanza.
+1# E qual è l'altro approccio alla gestione dei server?
 0# 
 2# Think of farmers. They easily have thousand of sheep. They don’t give them names. They manage them all together, as a cattle. They say "Let's buy 20% more sheep", or "move half the sheep from here to there". If 3 sheep dies, they replace them, it’s a number. They are all identical.
 2# Ops in many companies do the same. They focus on the Enterprise network health, not on the single SN101.
-1# Like in Amazon, or Google?
+1# Come in Amazon o in Google?
 2# Yes, and a lot of much smaller companies too. It's not about the amount of servers: it's about where you want to put your focus. Business capabilities vs the single servers. They can treat servers as sheep, because they use immutability, so they give the servers no opportunities to get any special.
 2# We could do the same. We could use special software for orchestrating our cattle of servers.
 0# 
 1# &nbsp;
 1# <h1>Docker</h2>
-1# What was the dashboard you showed me before, was it a prototype?
+1# Cos'era quella dashboard che mi hai mostrato prima? Era un prototipo?
 2# It was Docker, with Kubernetes and OperShift.
-1# Sorry?
+1# Scusa?
 2# You know, Brent, a lot of huge companies have been investing on this field, in the last years. Kubernetes is the orchestration tool written and used by Google. OpenShift is by RedHat, and is specially suited for Enterprises like us. The basic building block is Docker which makes immutability and automation possible.
-1# Albert, I'm not a technical person...
+1# Albert, non sono un tecnico...
 2# In a server you can run dozens, or hundreds of programs.
-1# Sure. and I must take care that they don't interfer one with the others in a bad way.
+1# Certo, questo lo so. E so anche che si devono prendere delle precauzioni perché i programmi non interferiscano l'uno con l'altro in modi non previsti.
 2# Exactly! If you run the server within Docker, Docker tricks each of those programs, and let it believe it is the only one existing in the server.
-1# So, it isolates programs from each others?
+1# Quindi, serve a isolare i programmi tra di loro?
 2# Yes! It segregates it in sort a of cage, a container. And it allows to build and configure that cage, in a very detailed way, so that a cage resemble a server in all details, from network, to certifications, and so on. For example, we may build a cage that is identical to our SN101
-1# The Master Copy!
+1# La Matrice Originale!
 2# Yes
-1# Ok. So that Master Copy is the description of the server.
+1# Ok. Quindi, la Matrice Originale è la descrizione del server.
 2# Of the server and the program running inside it!
-1# Ok, both: the server and the program. Makes sense.
-1# Who is supposed to work on this Master Copy, then? The Ops, or the Developer?
+1# Ok, di entrambi: del server e del programma. Ha senso.
+1# Ma chi è responsabile della Matrice Originale, chi è che la scrive? Il Developer o l'Ops?
 0# 
 2# Brent, you nailed it. This is probably the most important topic. Both.
-1# Both? Ops first, Dev later?
+1# In che senso entrambi? Prima l'Ops e poi il Developer?
 2# No, both, together, since the beginning. It must be a collaborative endeavour. Devs and Ops, together.
-1# Has it anything to do with this DevOps I heard about.
+1# Ha niente a che vedere con questo DevOps di cui si sente parlare sempre più spesso?
 2# Absolutely. Dev and Ops. Or, if you think about it: Dev, Security and Ops. The so called DevSecOps.
-1# It's science fiction.
+1# Vabbè, è fantascienza.
 2# Not at all, indeed. It's a matter of fact. A lot of companies adopted Docker and DevOps already. It is just the modern school for IT companies.
 2# But let me show what I did in my spare time, please.
 2# Do you remember our Transaction Service?
-1# The service our customers use to retrieve information about their credit card transactions?
+1# Qual era? Il servizio che i nostri clienti utilizzano per leggere le informazioni sulle transazioni delle loro carte di credito?
