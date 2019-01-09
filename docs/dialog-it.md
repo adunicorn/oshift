@@ -70,7 +70,7 @@
 1# Se cosa?
 2# I told you I had a proposal.
 0# 
-1# <h1>What if?<h1>
+1# <h1>What if?</h1>
 1# Una proposta. Dai, bene, sono pronto. Sputa il rospo.
 2# Ok, Brent. Let's do a game.
 2# Let’s say we had Immutability and Automation. Take an immutable server.
