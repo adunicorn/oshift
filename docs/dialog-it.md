@@ -64,7 +64,7 @@
 1# Ah, quindi non è solo lento, è anche costoso.
 1# Potresti chiedere ad Anna di preparane tre?
 2# Anna e' molto impegnata. Ogni server richiede tempo. Hai bisogno del doppio dei server? Devi raddoppiare il team...
-1# Sì, capisco. Non c'è modo di scappare da questa regola.
+1# Sì, capisco. Non c'è modo di sfuggire a questa regola.
 2# Beh, potremmo, se...
 1# Se cosa?
 2# Ti ho detto che avevo una proposta, no?
