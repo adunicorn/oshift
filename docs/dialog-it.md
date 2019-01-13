@@ -23,7 +23,7 @@
 1# A posto, ci vediamo venerdì.
 0# 
 1# &nbsp;
-1# <h1>Lunedì mattina</h1>
+1# <h1>Venerdì mattina</h1>
 1#  
 1# Ciao a tutti, buongiorno.
 2# Ciao Brent. Scusami, sono molto preso. Siamo nel mezzo del rilascio.
@@ -76,7 +76,7 @@
 1# Cosa intendi con Immutabile?
 2# Un server immutabile è un server che rilasci nel tuo cloud, ma nessuno può modificare.
 1# Non mi sembra così utile...
-2# Lo è, al contrario! Immagina che tu abbia ottenuto questo server a partire da una matrice
+2# Lo è, al contrario! Immagina che tu abbia stampato questo server a partire da una matrice
 1# In che senso stamparla partendo da una matrice?
 2# Sì, una matrice, la Master Copy, come quella che si usa per le monete, per esempio un franco. Puoi stampare milioni di monete con una matrice.
 2# Ora pensa al server SN101 e alla sua matrice: potresti creare il server dalla matrice. Una copia identica, immutabile
