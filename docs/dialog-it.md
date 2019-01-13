@@ -94,7 +94,6 @@
 2# ...lavoreremmo solo una volta
 2# Potremmo concentrare tutti gli sforzi per ottenere standard di qualità molto alti.
 2# Fallo solo una volta, al meglio
-0# 
 1# Ma cos'è che contiene questa Matrice, questa Master Copy?
 2# Tutto ciò che è necessario per eseguire un'applicazione: la rete, la configurazione, l'applicazione stessa...
 1# Interessante. Nessuna differenza tra i server. Così, il server SN101 non sarebbe più unico nel suo genere, nella flotta dei suoi cloni.
