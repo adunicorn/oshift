@@ -9,7 +9,7 @@
 2# Ehm, abbiamo un problema: l'amministratore del server SN101, Anna, è in vacanza lunedì, ma dovrebbe tornare un paio di giorni dopo.
 1# Ok, va bene. La possiamo sostituire con qualcun’altro?
 2# Temo di no; si è sempre occupata Anna di quel server. Nessuno lo conosce meglio di lei. Meglio attendere che torni.
-1# Va bene, ho capito. Allora, diciamo che rimandiamo il rilascio. Va bene a tutti se fissiamo per il prossimo venerdì?
+1# Va bene, ho capito. Allora, diciamo che rimandiamo il rilascio. Va bene a tutti se fissiamo per il prossimo venerdì invece che lunedì?
 2# Ok.
 0# 
 1# Posso sapere una cosa? Perché abbiamo questa dipendenza così forte tra le persone e i server?
@@ -33,11 +33,11 @@
 2# No, no, un altro: abbiamo un DB con due nodi e uno è lento. Non capisco perché... Davvero... Maledizione...
 1# Ok, va bene, mantenere la calma. Possiamo andare avanti con un nodo solo e magari rimuovere quanto prima la maintenance page?
 2# No, no! Il sistema non è stabile! Ci deve essere un baco.
-1# Un bug? Non riesci a correggerlo, Albert?
+1# Un bug? Correggilo, Albert?
 2# No, ti prego, non durante un rilascio!
 1# Uhm… Ok, allora valutiamo un rollback alla precedente versione per ripristinare tutto allo situazione di ieri. Possiamo?
 2# Si potrebbe... Forse è meglio. Ovviamente, anche il rollback potrebbe fallire. Dopotutto, è un ulteriore rilascio.
-1# Diosanto. Che ti devo dire? Procedi e incrociamo le dita...
+1# Diosanto. Che ti devo dire? Procedi con il rollback e incrociamo le dita...
 2# Ottimo, ha funzionato! Ora possiamo rimuovere la maintenance page.
 1# Benissimo. Ci vediamo tutti quanti nel pomeriggio. Voglio che facciamo un briefing e che si discuta di quello che non ha funzionato, e del perché, per vedere cosa possiamo migliorare del processo.
 2# È un'ottima idea. E ho una proposta interessante per te.
@@ -51,7 +51,7 @@
 2# Difficile a dirsi... 
 2# Magari Andy ha fatto qualche modifica… O magari l'ho fatta io e ho dimenticato di replicarla sui suoi server... è complicato, facciamo tutto a mano.
 1# Mi stai dicendo che è inevitabile...
-2# Già, così sembra
+2# Ne parliamo dopo, fa parte della proposta.
 1# Ok, ragazzi, ho bisogno di parlarvi di un altro argomento.
 1# Il prossimo venerdì è il Black Friday. Il reparto sales ha previsto che avremo un picco di traffico 4 volte superiore agli altri venerdì.
 1# Perché fai quella faccia, Albert? Ti preoccupa?
