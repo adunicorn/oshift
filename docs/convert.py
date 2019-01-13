@@ -16,7 +16,7 @@ print """
         <tr>
 """
 
-with open('dialog.md') as f:
+with open('dialog-it.md') as f:
    for line in f:
        parts = line.split("#")
        if parts[0] == "0":
